@@ -19,11 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <head />      
+      <head>
+        <title>Jiří Vecko</title>
+      </head>
       <body>
         <Navbar />
         {children}
-        </body>
+      </body>
     </html>
-  )
+  );
 }
