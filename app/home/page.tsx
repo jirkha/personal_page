@@ -13,7 +13,7 @@ function Home() {
           <h1 className="text-6xl text-slate-100 tracking-wide">
             <b>Vítejte</b> ve světě webových aplikací
           </h1>
-          <div>
+          {/* <div>
             <Image
               className="m-5"
               src={dot}
@@ -21,7 +21,8 @@ function Home() {
               width={177}
               height={13}
             ></Image>
-          </div>
+          </div> */}
+          <hr className="slate-100 mt-8"></hr>
           <div>
             <p className="mt-8 text-slate-300 tracking-wide">
               Mou největší motivací je touha učit se nové věci. Proto jsem se

@@ -1,11 +1,19 @@
 import './globals.css'
-import { Inter } from 'next/font/google';
+import { 
+  //Inter, 
+  Courier_Prime
+ } from 'next/font/google';
 import Navbar from './components/Navbar';
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
+// const inter = Inter({
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
+const courier = Courier_Prime({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -18,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" className={courier.className}>
       <head>
         <title>Jiří Vecko</title>
       </head>
