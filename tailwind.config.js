@@ -9,7 +9,20 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        typescript: "#007acc",
+        javascript: "#F0DB4F",
+        react: "#61DBFB",
+        html: "#E34C26",
+        css: "#2565AE",
+        tailwind: "#3490dc",
+        python: "#fbcb24",
+        django: "#092e20",
+        pandas: "#E70488",
+        postgre: "#008bb9",
+      },
+    },
   },
   plugins: [],
 };

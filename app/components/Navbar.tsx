@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import {Link} from "react-scroll";
 import Image from "next/image";
 import logo from "../images/jiri_vecko_logo_sm.jpeg";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const items: { label: string; page: string }[] = [
   {
@@ -56,12 +56,35 @@ function Navbar() {
             ))}
           </ul>
           <div
-            onClick={() => setNavbar(true)}
+            onClick={() => setNavbar(!navbar)}
             className="flex md:hidden mr-10 my-8 z-10 cursor-pointer"
           >
-            <AiOutlineMenu color="white" size={30} />
+            {navbar ? (
+              <AiOutlineClose color="white" size={30} />
+            ) : (
+              <AiOutlineMenu color="white" size={30} />
+            )}
           </div>
         </nav>
+        {navbar && (
+          <ul className="flex flex-col justify-center items-center bg-slate-800">
+            {items.map(({ label, page }) => (
+              <li
+                className="text-slate-100 mt-4 mb-4 cursor-pointer"
+                key={page}
+              >
+                <Link
+                  //onClick={() => setNavbar(!navbar)}
+                  to={page}
+                  smooth
+                  duration={500}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </header>
     </div>
   );
