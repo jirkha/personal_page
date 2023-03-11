@@ -8,11 +8,11 @@ function Home() {
     <div id="home">
       <article className="grid my-12 justify-items-center w-auto md:flex md:justify-around items-center">
         <section className="m-8">
-          <h1 className="text-6xl text-slate-100 tracking-wide mb-2">
+          <h1 className="text-6xl text-slate-100 tracking-widest mb-2">
             <b>Vecko Jiří</b>
           </h1>
           {/* <Image className="w-40 my-6" src={icon} alt="Icon of the author"></Image> */}
-          <h2 className="italic text-4xl text-slate-100 tracking-wide">
+          <h2 className="text-3xl text-slate-100 tracking-widest font-medium">
             programátor, tvůrce webových stránek a aplikací
           </h2>
           <hr className="slate-100 mt-8"></hr>

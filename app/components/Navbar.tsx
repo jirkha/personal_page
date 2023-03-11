@@ -35,13 +35,16 @@ function Navbar() {
   return (
     <div>
       <header>
-        <nav className="flex justify-between shadow mx-auto w-full px-2 bg-black">
+        <nav
+          className="flex items-center justify-between shadow mx-auto w-full
+        bg-gradient-to-r from-black to-neutral-800"
+        >
           <Image
             className="ml-8 w-28"
             src={logo}
             alt="Logo of the author"
           ></Image>
-          <ul className="hidden text-xl md:flex space-x-8 mr-10 my-8  text-slate-100">
+          <ul className="hidden text-xl md:flex space-x-8 mr-10   text-slate-100">
             {items.map(({ label, page }) => (
               <li
                 className=" hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
@@ -83,6 +86,7 @@ function Navbar() {
             ))}
           </ul>
         )}
+        <hr className="border-neutral-800 shadow"></hr>
       </header>
     </div>
   );

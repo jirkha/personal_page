@@ -22,7 +22,7 @@ function About() {
           Byť jsem vytvořil zatím startovní projekty, vzhledem k dosavadní
           pracovní činnosti ručím za dotažení projektu k maximální spokojenosti
           klienta. Díky velké motivaci mohu také nabídnout nižší cenu, avšak nikoli na
-          úkor kvality, kterou považuji za prvořadou
+          úkor kvality, kterou považuji za prvořadou.
         </p>
         <p className="text-lg mt-8 text-slate-300 tracking-wide">
           Moje vize je dlouhodobá spolupráce s klienty založená na důvěře,
