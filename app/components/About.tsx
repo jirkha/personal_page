@@ -14,17 +14,18 @@ function About() {
         <p className="text-lg mt-8 text-slate-300 tracking-wide">
           {" "}
           Protože vpřed se mohu dále posouvat zejména při tvorbě konkrétních
-          projektů, jsme připraven detailně vyslechnout přání klienta a následně
-          naprogramovat jako serverovou, tak i klientskou část aplikace.
-          Vytvářím dále osobní i firemní stránky na míru klienta.
+          projektů, jsem připraven detailně vyslechnout přání klienta a následně
+          naprogramovat jak serverovou, tak i klientskou část aplikace. Mohu
+          vytvořit taktéž osobní či firemní stránky na míru klienta.
         </p>
         <p className="text-lg mt-8 text-slate-300 tracking-wide">
-          Nemám za sebou zatím mnoho projektů, zato ale mohu nabídnout obrovskou
-          touhu učit se novým věcem, motivaci projekt dotáhnout až do úplné
-          spokojenosti klienta a nižší cenu, nikoliv ale na úkor kvaity.
+          Byť jsem vytvořil zatím startovní projekty, vzhledem k dosavadní
+          pracovní činnosti ručím za dotažení projektu k maximální spokojenosti
+          klienta. Díky velké motivaci mohu také nabídnout nižší cenu, avšak nikoli na
+          úkor kvality, kterou považuji za prvořadou
         </p>
         <p className="text-lg mt-8 text-slate-300 tracking-wide">
-          Mojí vizí je dlouhodobá spolupráce s klienty založená na důvěře,
+          Moje vize je dlouhodobá spolupráce s klienty založená na důvěře,
           spolehlivosti, komunikaci a lidském přístupu.
         </p>
       </section>

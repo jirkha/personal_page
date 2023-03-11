@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import {Link} from "react-scroll";
 import Image from "next/image";
-import logo from "../images/jiri_vecko_logo_sm.jpeg";
+import logo from "@/app/images/jiří_vecko_logo_PNG.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const items: { label: string; page: string }[] = [
@@ -37,13 +37,11 @@ function Navbar() {
       <header>
         <nav className="flex justify-between shadow mx-auto w-full px-2 bg-black">
           <Image
-            className="ml-8"
+            className="ml-8 w-28"
             src={logo}
             alt="Logo of the author"
-            width={90}
-            height={90}
           ></Image>
-          <ul className="hidden md:flex space-x-8 mr-10 my-8  text-slate-100">
+          <ul className="hidden text-xl md:flex space-x-8 mr-10 my-8  text-slate-100">
             {items.map(({ label, page }) => (
               <li
                 className=" hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
