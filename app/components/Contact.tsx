@@ -1,6 +1,7 @@
 import React from "react";
 import { FiPhone } from "react-icons/fi";
 import { RiAtLine } from "react-icons/ri";
+import { BsLinkedin } from "react-icons/bs";
 
 function Contact() {
   return (
@@ -24,8 +25,13 @@ function Contact() {
               <a href="mailto:veckoj@seznam.cz">veckoj@seznam.cz</a>
             </p>
           </div>
+          <div className="flex flex-row text-xl gap-x-10 mb-5">
+            <a href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/">
+              <BsLinkedin size={32} className="text-slate-100" />
+            </a>
+          </div>
         </section>
-        <h3 className="text-2xl text-slate-100 mt-16 mb-4">
+        <h3 className="text-2xl text-slate-100 mt-12 mb-4">
           ... nebo využijte <b className="tracking-wide">kontaktní formulář</b>
         </h3>
         <section className="">
