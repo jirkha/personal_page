@@ -33,7 +33,9 @@ function Projects() {
   return (
     <div id="projects" className="m-9 my-40">
       <section>
-        <h2 className="text-6xl text-slate-100 tracking-wide">Projekty</h2>
+        <h2 className="text-5xl sm:text-6xl text-slate-100 tracking-wide">
+          Projekty
+        </h2>
         <hr className="slate-100 mt-8"></hr>
         <div className="mt-8 p-2 flex flex-wrap mx-auto w-full h-fit">
           {projects.map(({ name, about, img, demo, code }) => (

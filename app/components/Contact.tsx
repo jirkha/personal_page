@@ -8,7 +8,9 @@ function Contact() {
     <div className="m-9 my-28" id="contact">
       <article>
         <header>
-          <h2 className="text-6xl text-slate-100 tracking-wide">Kontakt</h2>
+          <h2 className="text-5xl sm:text-6xl text-slate-100 tracking-wide">
+            Kontakt
+          </h2>
         </header>
         <hr className="slate-100 my-8"></hr>
         <section>
@@ -25,11 +27,18 @@ function Contact() {
               <a href="mailto:veckoj@seznam.cz">veckoj@seznam.cz</a>
             </p>
           </div>
-          <div className="flex flex-row text-xl gap-x-10 mb-5">
-            <a href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/">
-              <BsLinkedin size={32} className="text-slate-100" />
-            </a>
-          </div>
+          {/* <a
+            href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/"
+            className="py-4"
+          > */}
+          <a
+            className="flex flex-row text-xl gap-x-10 mb-5 w-52"
+            href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/"
+          >
+            <BsLinkedin size={32} className="text-slate-100" />
+            <p className="text-slate-100">Jiří Vecko</p>
+          </a>
+          {/* </a> */}
         </section>
         <h3 className="text-2xl text-slate-100 mt-12 mb-4">
           ... nebo využijte <b className="tracking-wide">kontaktní formulář</b>
