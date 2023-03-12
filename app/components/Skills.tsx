@@ -60,16 +60,16 @@ const experiences: { name: string; img: any; color: string }[] = [
     img: django,
     color: "django",
   },
-  {
-    name: "Pandas",
-    img: pandas,
-    color: "pandas",
-  },
-  {
-    name: "PostgreSQL",
-    img: postgre,
-    color: "postgre",
-  },
+  // {
+  //   name: "Pandas",
+  //   img: pandas,
+  //   color: "pandas",
+  // },
+  // {
+  //   name: "PostgreSQL",
+  //   img: postgre,
+  //   color: "postgre",
+  // },
   {
     name: "GitHub",
     img: github,

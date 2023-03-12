@@ -36,8 +36,8 @@ function Navbar() {
     <div>
       <header>
         <nav
-          className="flex items-center justify-between shadow mx-auto w-full
-        bg-gradient-to-r from-black to-neutral-800"
+          className="flex items-center justify-between shadow mx-auto w-full bg-black
+        md:bg-gradient-to-r from-black to-neutral-800"
         >
           <Image
             className="ml-8 w-28"
@@ -86,7 +86,7 @@ function Navbar() {
             ))}
           </ul>
         )}
-        <hr className="border-neutral-800 shadow"></hr>
+        <hr className="border-black md:border-neutral-800"></hr>
       </header>
     </div>
   );
