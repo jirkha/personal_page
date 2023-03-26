@@ -21,6 +21,7 @@ module.exports = {
         django: "#092e20",
         pandas: "#E70488",
         postgre: "#008bb9",
+        nextjs: "#a8b9c0",
       },
     },
   },
