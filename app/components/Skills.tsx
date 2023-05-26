@@ -28,12 +28,12 @@ const experiences: { id: number; name: string; img: any; color: string }[] = [
     img: javascript,
     color: "javascript",
   },
-  // {
-  //   id: 3,
-  //   name: "Next.js",
-  //   img: nextjs,
-  //   color: "a8b9c0",
-  // },
+  {
+    id: 3,
+    name: "Next.js",
+    img: nextjs,
+    color: "nextjs",
+  },
   {
     id: 4,
     name: "React",
@@ -93,6 +93,30 @@ const experiences: { id: number; name: string; img: any; color: string }[] = [
   },
 ];
 
+const colorClasses: { [key: string]: string } = {
+  javascript: "border-b-javascript",
+  nextjs: "border-b-nextjs",
+  react: "border-b-react",
+  html: "border-b-html",
+  tailwind: "border-b-tailwind",
+  mui: "border-b-tailwind",
+  python: "border-b-python",
+  django: "border-b-django",
+  black: "border-b-black",
+};
+
+const colorHoverClasses: { [key: string]: string } = {
+  javascript: "hover:border-javascript",
+  nextjs: "hover:border-nextjs",
+  react: "hover:border-react",
+  html: "hover:border-html",
+  tailwind: "hover:border-tailwind",
+  mui: "hover:border-tailwind",
+  python: "hover:border-python",
+  django: "hover:border-django",
+  black: "hover:border-black",
+};
+
 function Skills() {
   return (
     <div id="skills" className="m-9 my-28">
@@ -105,7 +129,7 @@ function Skills() {
           {experiences.map(({ id, name, img, color }) => (
             <div
               key={id}
-              className={`rounded hover:scale-105 border-2 border-gray-500 w-28 h-52 m-3 p-2`}
+              className={`rounded hover:scale-105 border-2 ${colorClasses[color]} ${colorHoverClasses[color]} w-28 h-52 m-3 p-2`}
             >
               <Image
                 className="m-8 w-20 mx-auto max-h-20"

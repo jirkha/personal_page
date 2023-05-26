@@ -2,6 +2,7 @@ import React from "react";
 import typescript from "@/app/images/logos/TypeScript.svg";
 import jp2 from "@/app/images/jp2_app.jpg";
 import personal_page from "@/app/images/personal_page.jpg";
+import under_construction from "@/app/images/under_construction.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -68,6 +69,33 @@ function Projects() {
               </div>
             </div>
           ))}
+          <div className="justify-between flex flex-col hover:scale-105 bg-slate-600 rounded w-64 h-auto m-3 shadow-inner shadow-slate-400">
+            <div>
+              {" "}
+              <Image
+                className="rounded p-2 w-auto mx-auto max-h-36"
+                src={under_construction}
+                alt="Project preview"
+              ></Image>
+              <h3 className="text-center underline underline-offset-8	text-slate-300 m-2 font-bold tracking-wide">
+                Kalkulátor volného času
+              </h3>
+              <p className="text-sm font-light text-center tracking-tight text-slate-300 m-3">
+                výpočet volného času a dalších dopadů stěhování z města
+              </p>
+              <p className="text-sm font-light text-center tracking-tight m-3 text-amber-300">
+                (v přípravě)
+              </p>
+            </div>
+
+            <div className="flex justify-around m-2 object-bottom">
+              <button className="rounded p-2 w-full bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400">
+                <Link href="https://github.com/jirkha/commute_calculator">
+                  Kód
+                </Link>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
