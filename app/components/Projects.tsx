@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const projects: {
   name: string;
-  about: string;
+  about: string | React.ReactNode;
   img: any;
   demo: string;
   code: string;
@@ -27,6 +27,22 @@ const projects: {
     img: personal_page,
     demo: "https://personalpage-production.up.railway.app/",
     code: "https://github.com/jirkha/personal_page",
+  },
+  {
+    name: "Kalkulátor volného času",
+    about: (
+      <>
+        <p className="text-sm font-light text-center tracking-tight text-slate-300 m-3">
+          výpočet volného času a dalších dopadů stěhování z města
+        </p>
+        <p className="text-sm font-light text-center tracking-tight m-3 text-amber-300">
+          (v přípravě)
+        </p>
+      </>
+    ),
+    img: under_construction,
+    demo: "https://commute-calculator-wheat.vercel.app/",
+    code: "https://github.com/jirkha/commute_calculator",
   },
 ];
 
@@ -69,7 +85,7 @@ function Projects() {
               </div>
             </div>
           ))}
-          <div className="justify-between flex flex-col hover:scale-105 bg-slate-600 rounded w-64 h-auto m-3 shadow-inner shadow-slate-400">
+          {/* <div className="justify-between flex flex-col hover:scale-105 bg-slate-600 rounded w-64 h-auto m-3 shadow-inner shadow-slate-400">
             <div>
               {" "}
               <Image
@@ -95,7 +111,7 @@ function Projects() {
                 </Link>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

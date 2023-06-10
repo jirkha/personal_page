@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import img from "../../app/images/portrait_jiri_vecko_cut_width.jpg";
 import icon from "../../app/images/jiří_vecko_icon_sm.png";
@@ -37,4 +37,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
