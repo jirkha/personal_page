@@ -41,7 +41,7 @@ const projects: {
       </>
     ),
     img: under_construction,
-    demo: "https://commute-calculator-wheat.vercel.app/",
+    demo: "https://sumasumarum.up.railway.app/",
     code: "https://github.com/jirkha/commute_calculator",
   },
 ];
