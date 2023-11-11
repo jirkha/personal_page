@@ -75,13 +75,19 @@ function Projects() {
 
               <div className="flex justify-around m-2 object-bottom">
                 {demo && (
-                  <button className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400">
-                    <Link href={demo}>Demo</Link>
-                  </button>
+                  <Link
+                    className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400"
+                    href={demo}
+                  >
+                    <p className="text-center">Demo</p>
+                  </Link>
                 )}
-                <button className="rounded p-2 w-full bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400">
-                  <Link href={code}>Kód</Link>
-                </button>
+                <Link
+                  className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400"
+                  href={code}
+                >
+                  <p className="text-center">Kód</p>
+                </Link>
               </div>
             </div>
           ))}
@@ -105,14 +111,18 @@ function Projects() {
             </div>
 
             <div className="flex justify-around m-2 object-bottom">
-              <button className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400">
-                <Link href="https://sumasumarum.vercel.app/">Demo</Link>
-              </button>
-              <button className="rounded p-2 w-full bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400">
-                <Link href="https://github.com/jirkha/commute_calculator">
-                  Kód
-                </Link>
-              </button>
+              <Link
+                className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400"
+                href="https://sumasumarum.vercel.app/"
+              >
+                <p className="text-center">Demo</p>
+              </Link>
+              <Link
+                className="rounded w-full p-2 bg-slate-700 hover:bg-slate-800 text-slate-300 shadow-inner shadow-slate-400"
+                href="https://github.com/jirkha/commute_calculator"
+              >
+                <p className="text-center">Kód</p>
+              </Link>
             </div>
           </div>
         </div>
