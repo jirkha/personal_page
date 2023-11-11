@@ -13,7 +13,7 @@ function Home() {
           </h1>
           {/* <Image className="w-40 my-6" src={icon} alt="Icon of the author"></Image> */}
           <h2 className="text-3xl text-slate-100 tracking-widest font-medium">
-            programátor, tvůrce webových stránek a aplikací
+            programátor, tvůrce webových aplikací
           </h2>
           <hr className="slate-100 mt-8"></hr>
           <div>

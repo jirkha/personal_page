@@ -16,12 +16,12 @@ import pandas from "@/app/images/logos/Pandas.png";
 import postgre from "@/app/images/logos/Postgresql.png";
 
 const experiences: { id: number; name: string; img: any; color: string }[] = [
-  // {
-  //   id: 1,
-  //   name: "TypeScript",
-  //   img: typescript,
-  //   color: "typescript",
-  // },
+  {
+    id: 1,
+    name: "TypeScript",
+    img: typescript,
+    color: "typescript",
+  },
   {
     id: 2,
     name: "JavaScript",
@@ -95,6 +95,7 @@ const experiences: { id: number; name: string; img: any; color: string }[] = [
 
 const colorClasses: { [key: string]: string } = {
   javascript: "border-b-javascript",
+  typescript: "border-b-typescript",
   nextjs: "border-b-nextjs",
   react: "border-b-react",
   html: "border-b-html",
@@ -107,6 +108,7 @@ const colorClasses: { [key: string]: string } = {
 
 const colorHoverClasses: { [key: string]: string } = {
   javascript: "hover:border-javascript",
+  typescript: "hover:border-typescript",
   nextjs: "hover:border-nextjs",
   react: "hover:border-react",
   html: "hover:border-html",
