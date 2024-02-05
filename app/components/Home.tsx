@@ -19,7 +19,7 @@ function Home() {
           <div>
             <p className="mt-8 text-lg text-slate-300 tracking-wide">
               Mou největší motivací je touha učit se novým věcem. Proto jsem
-              před dvěma lety začal s programováním a neustále se posouvám
+              v roce 2021 začal s programováním a neustále se posouvám
               vpřed.
             </p>
           </div>
