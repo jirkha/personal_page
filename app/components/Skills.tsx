@@ -127,11 +127,11 @@ function Skills() {
           Dovednosti
         </h2>
         <hr className="slate-100 mt-8"></hr>
-        <div className="mt-8 p-2 flex flex-wrap mx-auto w-full h-fit">
+        <div className="mt-8 p-2 grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 w-full h-fit">
           {experiences.map(({ id, name, img, color }) => (
             <div
               key={id}
-              className={`rounded hover:scale-105 border-2 ${colorClasses[color]} ${colorHoverClasses[color]} w-28 h-52 m-3 p-2`}
+              className={`rounded hover:scale-105 border-2 ${colorClasses[color]} ${colorHoverClasses[color]} w-36 h-52 m-3 p-2`}
             >
               <Image
                 className="m-8 w-20 mx-auto max-h-20"

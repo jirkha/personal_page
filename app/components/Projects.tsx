@@ -53,7 +53,7 @@ function Projects() {
           Projekty
         </h2>
         <hr className="slate-100 mt-8"></hr>
-        <div className="mt-8 p-2 flex flex-wrap mx-auto w-full h-fit">
+        <div className="mt-8 p-2 grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-4 w-full h-fit">
           {projects.map(({ name, about, img, demo, code }) => (
             <div
               key={name}
