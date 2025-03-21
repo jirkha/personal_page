@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import img from "../../app/images/portrait_jiri_vecko_cut_width.jpg";
 import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 function Home() {
   return (
     <div id="home">
-      <article className="grid my-12 justify-items-center w-auto md:flex md:justify-around items-center">
+      <article className="grid my-6 lg:my-12 justify-items-center w-auto md:flex md:justify-around items-center">
         <section className="m-8">
           <h1 className="text-6xl text-slate-100 tracking-widest mb-2">
             <b>Vecko Jiří</b>
@@ -22,17 +23,25 @@ function Home() {
               roce 2021 začal s programováním a neustále se posouvám vpřed
               vzděláváním a tvorbou projektů.
             </p>
-            <a
-              className="flex flex-row text-xl gap-x-10 mt-8 mb-5 w-52"
-              href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/"
-            >
-              <BsLinkedin size={48} className="text-slate-100" />
-            </a>
+            <div className="flex flex-row mt-8">
+              <a
+                className=""
+                href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/"
+              >
+                <BsLinkedin size={56} className="text-slate-100" />
+              </a>
+              <a
+                className="ml-8"
+                href="https://github.com/jirkha"
+              >
+                <FaGithub size={56} className="text-slate-100" />
+              </a>
+            </div>
           </div>
         </section>
 
         <Image
-          className="p-8 w-96 mx-auto"
+          className="p-6 w-96 mx-auto"
           src={img}
           alt="Pic of the author"
           // width={377}
