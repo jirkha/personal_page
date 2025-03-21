@@ -34,20 +34,20 @@ function Navbar() {
 
   return (
     <div>
-      <header>
-        <nav
-          className="flex items-center justify-between shadow mx-auto w-full bg-black
+      <header
+        className="w-full bg-black
         md:bg-gradient-to-r from-black to-neutral-800"
-        >
+      >
+        <nav className="flex items-center justify-between shadow max-w-[1220px] mx-auto">
           <Image
             className="ml-8 w-28"
             src={logo}
             alt="Logo of the author"
           ></Image>
-          <ul className="hidden text-xl md:flex space-x-8 mr-10   text-slate-100">
+          <ul className="hidden text-xl lg:flex space-x-8 mr-10 text-slate-100">
             {items.map(({ label, page }) => (
               <li
-                className=" hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
+                className="p-3 hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
                 key={page}
               >
                 <Link to={page} smooth duration={500}>
@@ -58,7 +58,7 @@ function Navbar() {
           </ul>
           <div
             onClick={() => setNavbar(!navbar)}
-            className="flex md:hidden mr-10 my-8 z-10 cursor-pointer"
+            className="flex lg:hidden mr-10 my-8 z-10 cursor-pointer"
           >
             {navbar ? (
               <AiOutlineClose color="white" size={30} />
@@ -71,7 +71,7 @@ function Navbar() {
           <ul className="flex flex-col justify-center items-center bg-slate-800">
             {items.map(({ label, page }) => (
               <li
-                className="text-slate-100 mt-4 mb-4 cursor-pointer"
+                className="text-slate-100 mt-4 mb-4 p-3 cursor-pointer"
                 key={page}
               >
                 <Link
