@@ -306,7 +306,7 @@ function ResumeEN() {
             Faculty of Transportation Sciences
           </p>
           <p className="text-base text-zinc-700 font-semibold">
-            Bachelor's degree (Bc.)
+            Bachelor&apos;s degree (Bc.)
           </p>
         </article>
       </section>
