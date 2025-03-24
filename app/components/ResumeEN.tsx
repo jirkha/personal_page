@@ -18,7 +18,7 @@ function ResumeEN() {
         <p className="mt-2 text-3xl text-left	text-zinc-900 tracking-wide">
           Junior Full-Stack Developer
         </p>
-        <p className="mt-2 text-base text-left text-zinc-800 tracking-widest">
+        <p className="mt-2 text-base text-left text-zinc-800">
           +420 721 665 444 | veckoj@seznam.cz |{" "}
           <a
             href="https://www.linkedin.com/in/jiri-vecko/"
@@ -38,7 +38,7 @@ function ResumeEN() {
             github.com/jirkha
           </a>
         </p>
-        <p className="mt-2 text-lg text-zinc-900 tracking-wide">
+        <p className="mt-2 text-lg text-zinc-900">
           I have been a transport specialist. My biggest motivation in life is
           the desire to learn new things, so I started programming in 2021 and
           have been continuously improving through education and project
