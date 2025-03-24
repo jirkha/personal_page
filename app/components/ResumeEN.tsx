@@ -70,7 +70,7 @@ function ResumeEN() {
         <article className="mb-3">
           <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center">
             <h3 className="text-2xl text-zinc-700 font-semibold">
-              J&P CANDLES
+              J&P CANDLES - WEB APPLICATION
             </h3>
 
             <a
