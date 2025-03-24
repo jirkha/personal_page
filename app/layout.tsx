@@ -1,8 +1,8 @@
 import './globals.css'
-import { 
-  //Inter, 
-  Courier_Prime
- } from 'next/font/google';
+import {
+  //Inter,
+  Courier_Prime,
+} from "next/font/google";
 import Navbar from './components/Navbar';
 
 // const inter = Inter({
