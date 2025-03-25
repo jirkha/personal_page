@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        mirandamedia: "url('../app/images/mirandamedia.png')",
+      },
+      backgroundSize: {
+        size: "20%",
+      },
+      backgroundPosition: {
+        center: "center",
+      },
       colors: {
         typescript: "#007acc",
         javascript: "#F0DB4F",
