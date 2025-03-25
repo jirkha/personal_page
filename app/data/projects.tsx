@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "J&P CANDLES - WEB APPLICATION",
     description:
-      "J&P Candles business app with warehouse management. It allows tracking and managing materials (including stock-in and stock-out), products, sales channels, transactions, and revenue statistics.",
+      "J&P Candles business app with warehouse management. It allows tracking and managing materials (including stock-in and stock-out), products, sales channels, transactions and revenue statistics.",
     tech: "React, JavaScript, Python, Django, PostgreSQL, Material UI, Redux, Axios",
     demo: "https://jpexamplepublic-production.up.railway.app",
     code: "https://github.com/jirkha/jp2",
@@ -18,7 +18,7 @@ export const projects = [
   {
     name: "DIV.CZ DEVELOPER",
     description:
-      "Non-profit team collaboration on developing a platform connecting movies, games, and books. I worked with the project lead to program scripts for the backend and frontend of the app.",
+      "Non-profit team collaboration on developing a platform connecting movies, games and books. I worked with the project lead to program scripts for the backend and frontend of the app.",
     tech: "Python, Django, PostgreSQL",
     demo: "https://www.div.cz",
     code: "https://github.com/div-cz",

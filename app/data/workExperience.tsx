@@ -23,7 +23,7 @@ export const workExperience = [
     years: "2017 - 2020",
     company: "IDSK",
     description:
-      "Team coordination, working with specialized software, and analytics",
+      "Team coordination, working with specialized software and analytics",
   },
   {
     position: "SUPERVISOR",
