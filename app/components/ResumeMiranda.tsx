@@ -54,8 +54,17 @@ function ResumeMiranda() {
             I have been a transport specialist. My biggest motivation in life is
             the desire to learn new things, so I started programming in 2021 and
             have been continuously improving through education and project
-            development (Python, JavaScript). Now, I am looking for a job
-            opportunity.
+            development (JavaScript, Python). Now, I am looking for a job
+            opportunity in{" "}
+            <a
+              href="https://www.mirandamedia.cz/kariera/5"
+              className="text-[#5AE592] underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MirandaMedia
+            </a>
+            .
           </p>
         </header>
 
@@ -66,8 +75,8 @@ function ResumeMiranda() {
           <hr className="border-[#5AE592] border-2 my-3"></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
             <li>
-              JavaScript, TypeScript, React, Next.js, Material UI, Tailwind CSS,
-              Redux, Axios
+              JavaScript, TypeScript, HTML, React, Next.js, Material UI,
+              Tailwind CSS, Redux, Axios
             </li>
             <li>Python, Django, PostgreSQL, REST API</li>
             <li>Git & GitHub</li>
