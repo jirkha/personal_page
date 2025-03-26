@@ -175,7 +175,9 @@ function ResumeMiranda() {
             <p className="text-base text-zinc-700">
               Faculty of Transportation Sciences
             </p>
-            <p className="text-base text-zinc-700">Bachelor's degree (Bc.)</p>
+            <p className="text-base text-zinc-700">
+              Bachelor&apos;s degree (Bc.)
+            </p>
           </article>
         </section>
 
