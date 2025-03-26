@@ -50,9 +50,12 @@ function Navbar() {
                 className="p-3 hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
                 key={page}
               >
-                <Link to={page} smooth duration={500}>
+                <a
+                  href={`https://www.jirivecko.cz/#${page}`}
+                  className="p-3 hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
+                >
                   {label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
