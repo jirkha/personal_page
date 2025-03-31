@@ -12,9 +12,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         mirandamedia: "url('../app/images/mirandamedia.png')",
+        sii: "url('../app/images/sii.png')",
       },
       backgroundSize: {
-        size: "20%",
+        sizeMiranda: "20%",
+        sizeSii: "20%",
       },
       backgroundPosition: {
         center: "center",

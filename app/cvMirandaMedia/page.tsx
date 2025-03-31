@@ -6,7 +6,7 @@ import img from "../../app/images/mirandamedia.png";
 
 const CV = () => {
   return (
-    <main className="flex flex-col bg-[#5AE592] lg:bg-mirandamedia bg-repeat bg-size mx-auto">
+    <main className="flex flex-col bg-[#5AE592] lg:bg-mirandamedia bg-repeat bg-sizeMiranda mx-auto">
       <Image
         className="lg:hidden max-w-xs w-auto mx-auto"
         src={img}
