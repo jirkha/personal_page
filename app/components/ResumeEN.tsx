@@ -105,7 +105,7 @@ function ResumeEN() {
                   <li>
                     <a
                       href={project.code}
-                      className="underline"
+                      className="underline break-words"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -176,12 +176,8 @@ function ResumeEN() {
           </h2>
           <hr className="border-zinc-500 my-3"></hr>
           <article className="mb-3">
-            <p className="text-base text-zinc-700">
-              Czech – Native
-            </p>
-            <p className="text-base text-zinc-700">
-              English – B2
-            </p>
+            <p className="text-base text-zinc-700">Czech – Native</p>
+            <p className="text-base text-zinc-700">English – B2</p>
             <p className="text-base text-zinc-700">German – A2</p>
           </article>
         </section>

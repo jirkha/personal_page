@@ -116,7 +116,7 @@ function ResumeMiranda() {
                   <li>
                     <a
                       href={project.code}
-                      className="underline"
+                      className="underline break-words"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
