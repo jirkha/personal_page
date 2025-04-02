@@ -11,15 +11,18 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        mirandamedia: "url('../app/images/mirandamedia.png')",
-        sii: "url('../app/images/sii.png')",
+        mirandamedia: "url('../app/images/companies/mirandamedia.png')",
+        sii: "url('../app/images/companies/sii.png')",
+        omio: "url('/companies/omio.svg')",
       },
       backgroundSize: {
         sizeMiranda: "20%",
         sizeSii: "20%",
+        sizeOmio: "18%",
       },
       backgroundPosition: {
         center: "center",
+        positionOmio: "100px 100px",
       },
       colors: {
         typescript: "#007acc",

@@ -2,7 +2,7 @@
 import React from "react";
 import ResumeMiranda from "../components/ResumeMiranda";
 import Image from "next/image";
-import img from "../../app/images/mirandamedia.png";
+import img from "../../app/images/companies/mirandamedia.png";
 
 const CV = () => {
   return (

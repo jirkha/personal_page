@@ -1,9 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import img from "../../app/images/companies/mirandamedia.png";
+import clsx from "clsx";
 import { Poppins } from "next/font/google";
 import { projects } from "../data/projects";
 import { workExperience } from "../data/workExperience";
+import { companyData, CompanyData } from "../data/companyData";
 
 const opensans = Poppins({
   subsets: ["latin"],
@@ -11,75 +11,96 @@ const opensans = Poppins({
   weight: "400",
 });
 
-function ResumeMiranda() {
+function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
+  const company: CompanyData = companyData[nameOfTheCompany];
+
   return (
     <article
-      id="resumeen"
-      className="mt-4 p-8 max-w-[900px] lg:mx-auto bg-gray-100"
+      id="resumecompany"
+      className="p-8 max-w-[900px] mx-auto bg-gray-100"
     >
       <div className={opensans.className}>
-        <header>
-          <div className="flex justify-start lg:justify-between items-start lg:items-center">
-            <h1 className="mr-3 text-5xl text-zinc-900 font-bold tracking-widest">
-              Jiří Vecko
-            </h1>
-            <h1 className="ml-3 text-5xl text-[#5AE592] font-bold tracking-widest">
-              CV
-            </h1>
+        <header className="flex flex-col lg:flex-row">
+          <img
+            className={clsx("block lg:hidden mb-8", company.imgClass)}
+            src={`/companies/${company.logo}`}
+            alt={`${company.name} Logo`}
+          />
+          <div className="text-left">
+            <div className="flex flex-row justify-between items-start mt-2">
+              <h1 className="text-5xl text-zinc-900 font-bold tracking-widest">
+                Jiří Vecko
+              </h1>
+              <h1
+                className="lg:hidden ml-4 text-5xl font-bold tracking-widest"
+                style={{ color: company.bgClass }}
+              >
+                CV
+              </h1>
+            </div>
+            <p className="mt-3 text-3xl text-zinc-900 tracking-wide">
+              Junior Full-Stack Developer
+            </p>
           </div>
-          <p className="mt-2 text-3xl text-left text-zinc-900 tracking-wide">
-            Junior Full-Stack Developer
-          </p>
-          <p className="mt-3 text-base text-left text-zinc-800">
-            +420 721 665 444 | veckoj@seznam.cz |{" "}
-            <a
-              href="https://www.linkedin.com/in/jiri-vecko/"
-              className="text-base underline text-zinc-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/jiri-vecko
-            </a>{" "}
-            |{" "}
-            <a
-              href="https://github.com/jirkha"
-              className="text-base underline text-zinc-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github.com/jirkha
-            </a>
-          </p>
-          <p className="mt-4 text-justify text-lg text-zinc-900">
-            I have been a transport specialist. My biggest motivation in life is
-            the desire to learn new things, so I started programming in 2021 and
-            have been continuously improving through education and project
-            development (JavaScript, Python). Now, I am looking for a job
-            opportunity in{" "}
-            <a
-              href="https://www.mirandamedia.cz/kariera/5"
-              className="text-[#5AE592] underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MirandaMedia
-            </a>
-            .
-          </p>
+          <img
+            className={clsx("hidden lg:block", company.imgClass)}
+            src={`/companies/${company.logo}`}
+            alt={`${company.name} Logo`}
+          />
         </header>
+
+        <p className="mt-4 text-base text-left text-zinc-800">
+          +420 721 665 444 | veckoj@seznam.cz |{" "}
+          <a
+            href="https://www.linkedin.com/in/jiri-vecko/"
+            className="text-base underline decoration-zinc-700"
+            style={{ color: company.bgClass }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/jiri-vecko
+          </a>{" "}
+          |{" "}
+          <a
+            href="https://github.com/jirkha"
+            className="text-base underline decoration-zinc-700"
+            style={{ color: company.bgClass }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/jirkha
+          </a>
+        </p>
+        <p className="mt-4 text-justify text-lg text-zinc-900">
+          I have been a transport specialist. My biggest motivation in life is
+          the desire to learn new things, so I started programming in 2021 and
+          have been continuously improving through education and project
+          development (JavaScript, React). Now, I am looking for a job
+          opportunity in{" "}
+          <a
+            href="https://sii-group.com/en-CZ/offers/software-development/frontend-developer-digital-identity-platform"
+            className="underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
+            style={{ color: company.bgClass }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {company.name}
+          </a>
+          .
+        </p>
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             Tech Stack
           </h2>
-          <hr className="border-[#5AE592] border-2 my-3"></hr>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.bgClass }}
+          ></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
-            <li>
-              JavaScript, TypeScript, HTML, React, Next.js, Material UI,
-              Tailwind CSS, Redux, Axios
-            </li>
-            <li>Python, Django, PostgreSQL, REST API</li>
-            <li>Git & GitHub</li>
+            <li>{company.techStack?.frontend?.join(", ")}</li>
+            <li>{company.techStack.backend.join(", ")}</li>
+            <li>{company.techStack.tools.join(", ")}</li>
           </ul>
         </section>
 
@@ -87,7 +108,10 @@ function ResumeMiranda() {
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             My projects
           </h2>
-          <hr className="border-[#5AE592] border-2 my-3"></hr>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.bgClass }}
+          ></hr>
           <div>
             {projects.map((project) => (
               <article key={project.name} className="mb-6">
@@ -98,7 +122,8 @@ function ResumeMiranda() {
                   {project.demo && (
                     <a
                       href={project.demo}
-                      className="text-base underline text-zinc-700 lg:ml-4"
+                      className="text-base underline lg:ml-4 decoration-zinc-700"
+                      style={{ color: company.bgClass }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -116,7 +141,8 @@ function ResumeMiranda() {
                   <li>
                     <a
                       href={project.code}
-                      className="underline break-words"
+                      className="underline break-words decoration-zinc-700"
+                      style={{ color: company.bgClass }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -133,7 +159,10 @@ function ResumeMiranda() {
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             Work experience
           </h2>
-          <hr className="border-[#5AE592] border-2 my-3"></hr>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.bgClass }}
+          ></hr>
           <div>
             {workExperience.map((job) => (
               <article key={job.position} className="mb-6">
@@ -162,7 +191,10 @@ function ResumeMiranda() {
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             Education
           </h2>
-          <hr className="border-[#5AE592] border-2 my-3"></hr>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.bgClass }}
+          ></hr>
           <article className="mb-3">
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
               <h3 className="text-xl text-zinc-700 font-bold">
@@ -185,7 +217,10 @@ function ResumeMiranda() {
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             Languages
           </h2>
-          <hr className="border-[#5AE592] border-2 my-3"></hr>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.bgClass }}
+          ></hr>
           <article className="mb-3">
             <p className="text-base text-zinc-700">Czech – Native</p>
             <p className="text-base text-zinc-700">English – B2</p>
@@ -197,4 +232,4 @@ function ResumeMiranda() {
   );
 }
 
-export default ResumeMiranda;
+export default ResumeCompany;

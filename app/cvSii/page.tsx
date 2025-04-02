@@ -1,8 +1,7 @@
-// pages/cv.js
 import React from "react";
 import ResumeSii from "../components/ResumeSii";
 import Image from "next/image";
-import img from "../../app/images/sii.png";
+import img from "../../app/images/companies/sii.png";
 
 const CV = () => {
   return (
