@@ -39,7 +39,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
               </h1>
             </div>
             <p className="mt-3 text-3xl text-zinc-900 tracking-wide">
-              Junior Full-Stack Developer
+              {company.profession}
             </p>
           </div>
           <img
@@ -72,13 +72,9 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </a>
         </p>
         <p className="mt-4 text-justify text-lg text-zinc-900">
-          I have been a transport specialist. My biggest motivation in life is
-          the desire to learn new things, so I started programming in 2021 and
-          have been continuously improving through education and project
-          development (JavaScript, React). Now, I am looking for a job
-          opportunity in{" "}
+          {company.about}{" "}
           <a
-            href="https://sii-group.com/en-CZ/offers/software-development/frontend-developer-digital-identity-platform"
+            href={company.companyLink}
             className="underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
             style={{ color: company.bgClass }}
             target="_blank"
@@ -98,9 +94,9 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
             style={{ borderColor: company.bgClass }}
           ></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
-            <li>{company.techStack?.frontend?.join(", ")}</li>
-            <li>{company.techStack.backend.join(", ")}</li>
-            <li>{company.techStack.tools.join(", ")}</li>
+            {Object.keys(company.techStack).map((key) => (
+              <li key={key}>{(company.techStack[key as keyof typeof company.techStack] || []).join(", ")}</li>
+            ))}
           </ul>
         </section>
 
