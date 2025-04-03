@@ -1,4 +1,5 @@
 import './globals.css'
+import Background from "./components/Background";
 import {
   //Inter,
   Courier_Prime,
@@ -42,15 +43,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en" className={courier.className}>
       <head>
         <title>Jiří Vecko</title>
       </head>
-      <body className="min-h-full w-full bg-gradient-to-b from-black to-slate-600">
+      <Background>
         <Navbar />
         {children}
-      </body>
+      </Background>
     </html>
   );
 }
