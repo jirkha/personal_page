@@ -9,7 +9,8 @@ export type CompanyData = {
   profession: string;
   logo: string;
   companyLink: string;
-  bgClass: string;
+  bgColor: string;
+  textColor: string;
   imgClass: string;
   about: string;
   techStack: CompanyTechStack;
@@ -26,7 +27,8 @@ export const companyData: { [key: string]: CompanyData } = {
     profession: "Junior Full-Stack Developer | Sustainable Mobility",
     logo: "omio.svg",
     companyLink: "https://www.omio.com/corporate/jobs/#744000045136045",
-    bgClass: "#132968",
+    bgColor: "#132968",
+    textColor: "#132968",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
       "I have been a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development (React, TypeScript). Now, I am looking for a job opportunity in ",
@@ -58,7 +60,9 @@ export const companyData: { [key: string]: CompanyData } = {
     profession: "Junior Full-Stack Developer | Sustainable Mobility",
     logo: "fairtiq.svg",
     companyLink: "https://fairtiq.com/cs/",
-    bgClass: "#F81C39",
+    bgColor:
+      "radial-gradient(circle, rgba(226, 26, 52, 0.1), rgba(226, 26, 52, 0.5))",
+    textColor: "rgba(226, 26, 52)",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
       "I have been a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development. I am interested in exploring collaboration opportunities with ",

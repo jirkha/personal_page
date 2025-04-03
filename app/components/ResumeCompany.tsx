@@ -33,7 +33,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
               </h1>
               <h1
                 className="lg:hidden ml-4 text-5xl font-bold tracking-widest"
-                style={{ color: company.bgClass }}
+                style={{ color: company.textColor }}
               >
                 CV
               </h1>
@@ -54,7 +54,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           <a
             href="https://www.linkedin.com/in/jiri-vecko/"
             className="text-base underline decoration-zinc-700"
-            style={{ color: company.bgClass }}
+            style={{ color: company.textColor }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -64,7 +64,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           <a
             href="https://github.com/jirkha"
             className="text-base underline decoration-zinc-700"
-            style={{ color: company.bgClass }}
+            style={{ color: company.textColor }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,7 +76,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           <a
             href={company.companyLink}
             className="underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
-            style={{ color: company.bgClass }}
+            style={{ color: company.textColor }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -91,7 +91,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </h2>
           <hr
             className="border-2 my-3"
-            style={{ borderColor: company.bgClass }}
+            style={{ borderColor: company.textColor }}
           ></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
             {Object.keys(company.techStack).map((key) => (
@@ -106,7 +106,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </h2>
           <hr
             className="border-2 my-3"
-            style={{ borderColor: company.bgClass }}
+            style={{ borderColor: company.textColor }}
           ></hr>
           <div>
             {projects.map((project) => (
@@ -119,7 +119,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
                     <a
                       href={project.demo}
                       className="text-base underline lg:ml-4 decoration-zinc-700"
-                      style={{ color: company.bgClass }}
+                      style={{ color: company.textColor }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -138,7 +138,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
                     <a
                       href={project.code}
                       className="underline break-words decoration-zinc-700"
-                      style={{ color: company.bgClass }}
+                      style={{ color: company.textColor }}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -157,7 +157,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </h2>
           <hr
             className="border-2 my-3"
-            style={{ borderColor: company.bgClass }}
+            style={{ borderColor: company.textColor }}
           ></hr>
           <div>
             {workExperience.map((job) => (
@@ -189,7 +189,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </h2>
           <hr
             className="border-2 my-3"
-            style={{ borderColor: company.bgClass }}
+            style={{ borderColor: company.textColor }}
           ></hr>
           <article className="mb-3">
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
@@ -215,7 +215,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           </h2>
           <hr
             className="border-2 my-3"
-            style={{ borderColor: company.bgClass }}
+            style={{ borderColor: company.textColor }}
           ></hr>
           <article className="mb-3">
             <p className="text-base text-zinc-700">Czech – Native</p>

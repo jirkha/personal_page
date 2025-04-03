@@ -19,9 +19,7 @@ function CompanyCV({ params }: Props): JSX.Element {
   const company: CompanyData = companyData[nameOfTheCompany];
 
   return (
-    <main
-      style={{ backgroundColor: company.bgClass }}
-    >
+    <main style={{ background: company.bgColor }}>
       <div className="lg:pt-4">
         <ResumeCompany nameOfTheCompany={nameOfTheCompany} />
       </div>
