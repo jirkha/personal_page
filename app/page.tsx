@@ -7,7 +7,7 @@ import Contact from "./components/Contact";
 
 export default function Page() {
   return (
-    <main className="flex flex-col space-y-40 max-w-[1220px] mx-auto bg-gradient-to-b from-black to-slate-600">
+    <main className="flex flex-col space-y-40 max-w-[1220px] mx-auto">
       <Home />
       <About />
       <Skills />

@@ -47,7 +47,7 @@ export default function RootLayout({
       <head>
         <title>Jiří Vecko</title>
       </head>
-      <body className="min-h-full w-full">
+      <body className="min-h-full w-full bg-gradient-to-b from-black to-slate-600">
         <Navbar />
         {children}
       </body>
