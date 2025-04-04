@@ -10,8 +10,6 @@ export default function Background({
   const pathname = usePathname();
   const isHomePage = pathname === "/" || pathname.startsWith("/#");
 
-  console.log(isHomePage)
-
   return (
     <body
       className={clsx(

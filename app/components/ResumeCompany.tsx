@@ -95,7 +95,11 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           ></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
             {Object.keys(company.techStack).map((key) => (
-              <li key={key}>{(company.techStack[key as keyof typeof company.techStack] || []).join(", ")}</li>
+              <li key={key}>
+                {(
+                  company.techStack[key as keyof typeof company.techStack] || []
+                ).join(", ")}
+              </li>
             ))}
           </ul>
         </section>
@@ -109,45 +113,62 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
             style={{ borderColor: company.textColor }}
           ></hr>
           <div>
-            {projects.map((project) => (
-              <article key={project.name} className="mb-6">
-                <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center mb-1">
-                  <h3 className="text-xl text-zinc-700 font-bold">
-                    {project.name}
-                  </h3>
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      className="text-base underline lg:ml-4 decoration-zinc-700"
-                      style={{ color: company.textColor }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {project.demo.replace("https://", "")}
-                    </a>
-                  )}
-                </div>
+            {projects.map((project) => {
+              let techKey: keyof typeof company.projectTech | null = null;
 
-                <p className="text-base text-zinc-700 text-justify">
-                  {project.description}
-                </p>
+              if (project.name.includes("J&P CANDLES")) {
+                techKey = "jp";
+              } else if (project.name.includes("SUMA SUMÁRUM")) {
+                techKey = "suma";
+              } else if (project.name.includes("DIV.CZ")) {
+                techKey = "div";
+              }
 
-                <ul className="ml-8 list-disc text-base text-zinc-700">
-                  <li>{project.tech}</li>
-                  <li>
-                    <a
-                      href={project.code}
-                      className="underline break-words decoration-zinc-700"
-                      style={{ color: company.textColor }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {project.code.replace("https://", "")}
-                    </a>
-                  </li>
-                </ul>
-              </article>
-            ))}
+              const techList = techKey ? company.projectTech[techKey] : [];
+
+              return (
+                <article key={project.name} className="mb-6">
+                  <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center mb-1">
+                    <h3 className="text-xl text-zinc-700 font-bold">
+                      {project.name}
+                    </h3>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        className="text-base underline lg:ml-4 decoration-zinc-700"
+                        style={{ color: company.textColor }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.demo.replace("https://", "")}
+                      </a>
+                    )}
+                  </div>
+
+                  <p className="text-base text-zinc-700 text-justify">
+                    {project.description}
+                  </p>
+
+                  <ul className="ml-8 list-disc text-base text-zinc-700">
+                    {techList.length > 0 && (
+                      <li>{techList[0]}</li> 
+                    )}
+
+                    <li>
+                      <a
+                        href={project.code}
+                        className="underline break-words decoration-zinc-700"
+                        style={{ color: company.textColor }}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {project.code.replace("https://", "")}
+                      </a>
+                    </li>
+                  </ul>
+                </article>
+              );
+            })}
           </div>
         </section>
 

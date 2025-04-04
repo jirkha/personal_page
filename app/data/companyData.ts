@@ -65,7 +65,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgba(226, 26, 52)",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
-      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
+      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (Python, JavaScript) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
     techStack: {
       backend: ["Python", "REST API", "Django", "PostgreSQL"],
       frontend: [
@@ -135,7 +135,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgb(0, 160, 120)",
     imgClass: "lg:ml-auto h-24",
     about:
-      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, React) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "JavaScript",
