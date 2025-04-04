@@ -31,7 +31,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "#132968",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
-      "I am a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development (React, TypeScript). Now, I am looking for a job opportunity in ",
+      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "JavaScript",
@@ -65,7 +65,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgba(226, 26, 52)",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
-      "I am a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development. I am interested in exploring collaboration opportunities with ",
+      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
     techStack: {
       backend: ["Python", "REST API", "Django", "PostgreSQL"],
       frontend: [
@@ -99,7 +99,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgb(8, 183, 230)",
     imgClass: "mx-auto h-full sm:mt-3 sm:w-3/5 lg:w-2/5",
     about:
-      "I am a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development. I am interested in exploring collaboration opportunities with ",
+      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
     techStack: {
       frontend: [
         "JavaScript",
@@ -135,7 +135,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgb(0, 160, 120)",
     imgClass: "lg:ml-auto h-24",
     about:
-      "I have been a transport specialist. My biggest motivation in life is the desire to learn new things, so I started programming in 2021 and have been continuously improving through education and project development (JavaScript, React). Now, I am looking for a job opportunity in ",
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "JavaScript",
