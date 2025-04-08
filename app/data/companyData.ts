@@ -99,7 +99,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgb(8, 183, 230)",
     imgClass: "mx-auto h-full sm:mt-3 sm:w-3/5 lg:w-2/5",
     about:
-      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
+      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (JavaScript, React, Python) and keep learning more in the field. Now, I am open to different forms of cooperation with ",
     techStack: {
       frontend: [
         "JavaScript",

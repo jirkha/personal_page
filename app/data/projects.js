@@ -3,7 +3,7 @@ export const projects = [
     name: "J&P CANDLES - WEB APPLICATION",
     description:
       "J&P Candles business app with warehouse management. It allows tracking and managing materials (including stock-in and stock-out), products, sales channels, transactions and revenue statistics.",
-    tech: " React, JavaScript, HTML, REST API, Python, Django,PostgreSQL, Material UI, Redux, Axios",
+    tech: " React, JavaScript, Python, Django, HTML, REST API, PostgreSQL, Material UI, Redux, Axios",
     demo: "https://jpexamplepublic-production.up.railway.app",
     code: "https://github.com/jirkha/jp2",
   },

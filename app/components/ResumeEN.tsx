@@ -21,7 +21,7 @@ function ResumeEN() {
             <h1 className="mr-3 text-5xl text-zinc-900 font-bold tracking-widest">
               Jiří Vecko
             </h1>
-            <h1 className="ml-3 text-5xl text-zinc-400 font-bold tracking-widest">
+            <h1 className="ml-3 text-5xl text-teal-700 font-bold tracking-widest">
               CV
             </h1>
           </div>
@@ -32,7 +32,7 @@ function ResumeEN() {
             +420 721 665 444 | veckoj@seznam.cz |{" "}
             <a
               href="https://www.linkedin.com/in/jiri-vecko/"
-              className="text-base underline text-zinc-700"
+              className="text-base underline text-teal-700"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +41,7 @@ function ResumeEN() {
             |{" "}
             <a
               href="https://github.com/jirkha"
-              className="text-base underline text-zinc-700"
+              className="text-base underline text-teal-700"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,11 +49,10 @@ function ResumeEN() {
             </a>
           </p>
           <p className="mt-4 text-justify text-lg text-zinc-900">
-            I have been a transport specialist. My biggest motivation in life is
-            the desire to learn new things, so I started programming in 2021 and
-            have been continuously improving through education and project
-            development (Python, JavaScript). Now, I am looking for a job
-            opportunity.
+            I am a transport specialist. Since 2021, along with my
+            transportation expertise, I have been focusing on programming. I
+            create my own projects (JavaScript, Python) and keep learning
+            more in the field. Now, I am open to different forms of cooperation.
           </p>
         </header>
 
@@ -87,7 +86,7 @@ function ResumeEN() {
                   {project.demo && (
                     <a
                       href={project.demo}
-                      className="text-base underline text-zinc-700 lg:ml-4"
+                      className="text-base underline text-teal-700 lg:ml-4"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -105,7 +104,7 @@ function ResumeEN() {
                   <li>
                     <a
                       href={project.code}
-                      className="underline break-words"
+                      className="underline break-words text-teal-700"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
