@@ -31,7 +31,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "#132968",
     imgClass: "mx-auto h-20 lg:w-2/5",
     about:
-      "I am a transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am looking for a job opportunity in ",
+      "I am a railway transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (React, JavaScript) and keep learning more in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "JavaScript",
@@ -120,7 +120,7 @@ export const companyData: { [key: string]: CompanyData } = {
         "JavaScript, React, REST API, Python, Django, PostgreSQL, Material UI, Redux, Axios",
       ],
       suma: [
-        "JavaScript, TypeScript, React, Next.js, TypeScript, Google API, HTML, Tailwind CSS",
+        "JavaScript, TypeScript, React, Next.js, Google API, HTML, Tailwind CSS",
       ],
       div: ["Python, Django, PostgreSQL"],
     },
@@ -156,7 +156,7 @@ export const companyData: { [key: string]: CompanyData } = {
         "JavaScript, React, Redux, HTML, REST API, Python, Django, PostgreSQL, Material UI, Axios",
       ],
       suma: [
-        "JavaScript, TypeScript, React, HTML, Next.js, TypeScript, Google API, HTML, Tailwind CSS",
+        "JavaScript, TypeScript, React, HTML, Next.js, Google API, HTML, Tailwind CSS",
       ],
       div: ["Python, Django, PostgreSQL"],
     },
@@ -166,14 +166,15 @@ export const companyData: { [key: string]: CompanyData } = {
     profession: "Junior Full-Stack Developer",
     logo: "ok.svg",
     companyLink: "https://www.oksystem.com/cs/kariera",
-    bgColor: "radial-gradient(circle, rgb(1, 150, 69, 0.1), rgb(1, 150, 69, 0.5)",
+    bgColor:
+      "radial-gradient(circle, rgb(1, 150, 69, 0.1), rgb(1, 150, 69, 0.5)",
     textColor: "rgb(1, 150, 69)",
     imgClass: "mx-auto lg:ml-auto h-24",
     about:
       "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
-        "JavaScript, TypeScript, React, Redux, HTML, Tailwind CSS, Next.js, Material UI, Axios"
+        "JavaScript, TypeScript, React, Redux, HTML, Tailwind CSS, Next.js, Material UI, Axios",
       ],
       backend: ["Python", "REST API", "Django", "PostgreSQL"],
       tools: ["Git & GitHub"],
@@ -183,8 +184,86 @@ export const companyData: { [key: string]: CompanyData } = {
         "JavaScript, React, Python, Django, REST API, PostgreSQL, HTML, Redux, Material UI, Axios",
       ],
       suma: [
-        "JavaScript, TypeScript, React, HTML, Next.js, TypeScript, Google API, HTML, Tailwind CSS",
+        "JavaScript, TypeScript, React, HTML, Next.js, Google API, HTML, Tailwind CSS",
       ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  contember: {
+    name: "Contember",
+    profession: "Junior Full-Stack Developer",
+    logo: "contember.svg",
+    companyLink: "https://www.contember.com/",
+    bgColor: "radial-gradient(circle, rgb(0, 24, 47, 0.5), rgb(0, 24, 47, 0.8)",
+    textColor: "rgb(0, 24, 47)",
+    imgClass: "mx-auto lg:mx-0 -mt-4 lg:ml-auto h-24 lg:w-2/5",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React, JavaScript, TypeScript, Next.js, Redux, HTML, Tailwind CSS, Material UI, Axios",
+      ],
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, REST API, PostgreSQL, HTML, Redux, Material UI, Axios",
+      ],
+      suma: [
+        "React, JavaScript, TypeScript, HTML, Next.js, Google API, HTML, Tailwind CSS",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  aim: {
+    name: "Aim",
+    profession: "Junior Full-Stack Developer",
+    logo: "aim.svg",
+    companyLink: "https://www.startupjobs.cz/nabidka/89491/fullstack-engineer",
+    bgColor:
+      "radial-gradient(circle, rgb(68, 0, 204, 0.3), rgb(68, 0, 204, 0.5)",
+    textColor: "rgb(68, 0, 204)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto h-40 lg:w-2/5",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, Next.js, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React, JavaScript, TypeScript, Next.js, Tailwind CSS, Material UI, HTML, Redux, Axios",
+      ],
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, REST API, PostgreSQL, Material UI, HTML, Redux, Axios",
+      ],
+      suma: ["React, TypeScript, Next.js, Tailwind CSS, HTML, Google API"],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  azd: {
+    name: "AŽD",
+    profession: "Sustainable Mobility | Junior Full-Stack Developer",
+    logo: "azd.png",
+    companyLink: "https://www.azd.cz/cs/zamestnani",
+    bgColor: "radial-gradient(circle, rgb(0, 72, 114, 0.5), rgb(255, 209, 0, 0.3)",
+    textColor: "rgb(230, 188, 0)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/5",
+    about:
+      "I am a railway transport specialist. Since 2021, along with my transportation expertise, I have been focusing on programming. I create my own projects (Python, JavaScript) and keep learning more in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      frontend: [
+        "React, JavaScript, TypeScript, Next.js, Tailwind CSS, Material UI, HTML, Redux, Axios",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, REST API, React, JavaScript, PostgreSQL, Material UI, HTML, Redux, Axios",
+      ],
+      suma: ["React, TypeScript, Next.js, Tailwind CSS, HTML, Google API"],
       div: ["Python, Django, PostgreSQL"],
     },
   },
