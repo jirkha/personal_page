@@ -26,7 +26,7 @@ function ResumeEN() {
             </h1>
           </div>
           <p className="mt-2 text-3xl text-left	text-zinc-900 tracking-wide">
-            Junior Full-Stack Developer
+            Junior Full-Stack Developer | Sustainable Mobility
           </p>
           <p className="mt-3 text-base text-left text-zinc-800">
             +420 721 665 444 | veckoj@seznam.cz |{" "}
@@ -51,8 +51,8 @@ function ResumeEN() {
           <p className="mt-4 text-justify text-lg text-zinc-900">
             I am a transport specialist. Since 2021, along with my
             transportation expertise, I have been focusing on programming. I
-            create my own projects (JavaScript, Python) and keep learning
-            more in the field. Now, I am open to different forms of cooperation.
+            create my own projects (JavaScript, Python) and keep learning more
+            in the field. Now, I am open to different forms of cooperation.
           </p>
         </header>
 
