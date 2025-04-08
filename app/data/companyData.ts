@@ -161,4 +161,31 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  oksystem: {
+    name: "OKsystem",
+    profession: "Junior Full-Stack Developer",
+    logo: "ok.svg",
+    companyLink: "https://www.oksystem.com/cs/kariera",
+    bgColor: "radial-gradient(circle, rgb(1, 150, 69, 0.1), rgb(1, 150, 69, 0.5)",
+    textColor: "rgb(1, 150, 69)",
+    imgClass: "mx-auto lg:ml-auto h-24",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "JavaScript, TypeScript, React, Redux, HTML, Tailwind CSS, Next.js, Material UI, Axios"
+      ],
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, Python, Django, REST API, PostgreSQL, HTML, Redux, Material UI, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, React, HTML, Next.js, TypeScript, Google API, HTML, Tailwind CSS",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
