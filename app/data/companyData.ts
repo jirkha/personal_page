@@ -244,10 +244,11 @@ export const companyData: { [key: string]: CompanyData } = {
   },
   azd: {
     name: "AŽD",
-    profession: "Sustainable Mobility | Junior Full-Stack Developer",
+    profession: "Railway Transport | Junior Full-Stack Developer",
     logo: "azd.png",
     companyLink: "https://www.azd.cz/cs/zamestnani",
-    bgColor: "radial-gradient(circle, rgb(0, 72, 114, 0.5), rgb(255, 209, 0, 0.3)",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 72, 114, 0.5), rgb(255, 209, 0, 0.3)",
     textColor: "rgb(230, 188, 0)",
     imgClass: "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/5",
     about:
