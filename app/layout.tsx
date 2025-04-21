@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   
   return (
-    <html lang="en" className={courier.className}>
+    <html lang="cs-cz" className={courier.className}>
       <head>
         <title>Jiří Vecko</title>
       </head>
