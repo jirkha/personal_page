@@ -1,6 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import {Link} from "react-scroll";
+//import {Link} from "react-scroll";
 import Image from "next/image";
 import logo from "@/app/images/jiří_vecko_logo_PNG.png";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -34,7 +34,7 @@ function Navbar() {
 
   return (
     <header
-      className="w-full bg-black
+      className="sticky top-0 w-full bg-black
         md:bg-gradient-to-r from-black to-neutral-800"
     >
       <nav className="flex items-center justify-between shadow max-w-[1220px] mx-auto">

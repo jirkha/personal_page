@@ -1,7 +1,6 @@
 import React from "react";
-import typescript from "@/app/images/logos/TypeScript.svg";
 import jp2 from "@/app/images/jp2_app.png";
-import personal_page from "@/app/images/personal_page.jpg";
+import personal_page from "@/app/images/personal_page.png";
 import sumasumarum from "@/app/images/sumasumarum.png";
 import divcz from "@/app/images/divcz.png";
 import Image from "next/image";
@@ -30,8 +29,8 @@ const projects: {
     code: "https://github.com/jirkha/personal_page",
   },
   {
-    name: "Kalkulátor volného času",
-    about: "výpočet volného času a dalších dopadů stěhování z města",
+    name: "SUMA SUMÁRUM",
+    about: "kalkulátor volného času a dalších dopadů stěhování z města",
     img: sumasumarum,
     demo: "https://sumasumarum.vercel.app/",
     code: "https://github.com/jirkha/commute_calculator",
