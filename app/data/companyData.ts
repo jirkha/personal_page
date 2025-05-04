@@ -125,35 +125,37 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
-  koala42: {
-    name: "KOALA42",
+  mediaboard: {
+    name: "Mediaboard",
     profession: "Junior Full-Stack Developer",
-    logo: "koala.svg",
-    companyLink: "https://koala42.com/career",
+    logo: "mediaboard.svg",
+    companyLink:
+      "https://mediaboard.com/cs/volne-pozice/junior-python-developer/?_gl=1*1jbbjt3*_up*MQ..*_ga*MzcxOTM1ODg1LjE3NDYzNzkyMzk.*_ga_F1KVHNZSSD*czE3NDYzNzkyMzkkbzEkZzEkdDE3NDYzNzkyNTIkajAkbDAkaDE0OTE2NTM4ODE.",
     bgColor:
-      "radial-gradient(circle, rgb(0, 226, 172, 0.1), rgb(0, 226, 172, 0.5)",
-    textColor: "rgb(0, 160, 120)",
-    imgClass: "lg:ml-auto h-24",
+      "radial-gradient(circle, rgb(13, 97, 255, 0.1), rgb(13, 97, 255, 0.8)",
+    textColor: "rgb(13, 97, 255)",
+    imgClass: "mx-auto h-full sm:mt-3 sm:w-3/5 lg:w-2/5",
     about:
-      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, React) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, React) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
+      backend: ["Python", "Django", "REST API", "PostgreSQL"],
       frontend: [
-        "JavaScript",
+        "Next.js",
         "TypeScript",
+        "JavaScript",
         "React",
         "Redux",
         "HTML",
         "Tailwind CSS",
-        "Next.js",
         "Material UI",
         "Axios",
       ],
-      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+
       tools: ["Git & GitHub"],
     },
     projectTech: {
       jp: [
-        "JavaScript, React, Redux, HTML, REST API, Python, Django, PostgreSQL, Material UI, Axios",
+        "Python, Django, PostgreSQL, REST API, JavaScript, React, Redux, HTML, Material UI, Axios",
       ],
       suma: [
         "JavaScript, TypeScript, React, HTML, Next.js, Google API, HTML, Tailwind CSS",
