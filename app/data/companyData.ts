@@ -158,7 +158,7 @@ export const companyData: { [key: string]: CompanyData } = {
         "Python, Django, PostgreSQL, REST API, JavaScript, React, Redux, HTML, Material UI, Axios",
       ],
       suma: [
-        "JavaScript, TypeScript, React, HTML, Next.js, Google API, HTML, Tailwind CSS",
+        "Next.js, JavaScript, TypeScript, React, HTML, Google API, HTML, Tailwind CSS",
       ],
       div: ["Python, Django, PostgreSQL"],
     },
