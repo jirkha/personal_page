@@ -130,11 +130,40 @@ export const companyData: { [key: string]: CompanyData } = {
     profession: "Junior Full-Stack Developer",
     logo: "appio.svg",
     companyLink: "https://www.appio.dev/",
-    bgColor: "radial-gradient(circle, rgb(10, 85, 215, 0.4), rgb(10, 85, 215, 0.7)",
+    bgColor:
+      "radial-gradient(circle, rgb(10, 85, 215, 0.4), rgb(10, 85, 215, 0.7)",
     textColor: "rgb(10, 85, 215)",
     imgClass: "mx-auto lg:mx-0 -mt-4 lg:ml-auto h-24 lg:w-2/5",
     about:
       "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React, JavaScript, TypeScript, Next.js, Redux, HTML, Tailwind CSS, Material UI, Axios",
+      ],
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, REST API, PostgreSQL, HTML, Redux, Material UI, Axios",
+      ],
+      suma: [
+        "React, JavaScript, TypeScript, HTML, Next.js, Google API, HTML, Tailwind CSS",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  assist: {
+    name: "ASSIST",
+    profession: "Junior Full-Stack Developer",
+    logo: "assist.png",
+    companyLink:
+      "https://www.assist.cz/career-job/junior-developer-2#poslat-cv",
+    bgColor: "radial-gradient(circle, rgb(0, 105, 145, 0.5), rgb(0, 105, 145, 0.8)",
+    textColor: "rgb(0, 105, 145)",
+    imgClass: "mx-auto h-full sm:mt-3 lg:mt-1 sm:w-2/5 lg:w-1/5",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "React, JavaScript, TypeScript, Next.js, Redux, HTML, Tailwind CSS, Material UI, Axios",
