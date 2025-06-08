@@ -153,13 +153,49 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  certicon: {
+    name: "CertiCon",
+    profession: "Junior Full-Stack Developer",
+    logo: "certicon.png",
+    companyLink: "https://makejvit.cz/",
+    bgColor: "radial-gradient(circle, rgb(0, 84, 147, 0.5), rgb(0, 84, 147)",
+    textColor: "rgb(0, 84, 147)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto w-2/3 sm:w-1/3",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      backend: ["Python", "REST API", "Django", "PostgreSQL"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Material UI",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Axios",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, PostgreSQL, JavaScript, React, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, React, Next.js, Google API, HTML, Tailwind CSS",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
   assist: {
     name: "ASSIST",
     profession: "Junior Full-Stack Developer",
     logo: "assist.png",
     companyLink:
       "https://www.assist.cz/career-job/junior-developer-2#poslat-cv",
-    bgColor: "radial-gradient(circle, rgb(0, 105, 145, 0.5), rgb(0, 105, 145, 0.8)",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 105, 145, 0.5), rgb(0, 105, 145, 0.8)",
     textColor: "rgb(0, 105, 145)",
     imgClass: "mx-auto h-full sm:mt-3 lg:mt-1 sm:w-2/5 lg:w-1/5",
     about:
