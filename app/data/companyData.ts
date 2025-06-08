@@ -195,8 +195,8 @@ export const companyData: { [key: string]: CompanyData } = {
     companyLink:
       "https://czechoslovakgroup.jobs.cz/detail-pozice?r=detail&id=2000551168&rps=233&impressionId=a9519242-5fec-4c46-9461-090db7b1fbce",
     bgColor:
-      "radial-gradient(circle, rgb(187, 11, 30, 0.4), rgb(187, 11, 30, 0.8)",
-    textColor: "rgb(187, 11, 30)",
+      "radial-gradient(circle, rgb(242, 32, 55, 0.5), rgb(242, 32, 55, 0.8)",
+    textColor: "rgb(242, 32, 55)",
     imgClass: "mx-auto h-full sm:mt-3 sm:w-3/5 lg:w-2/5",
     about:
       "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
