@@ -280,4 +280,41 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  hptronic: {
+    name: "HP TRONIC",
+    profession: "Junior Full-Stack Developer",
+    logo: "hptronic.svg",
+    companyLink:
+      "https://hptronic.jobs.cz/detail-pozice?r=detail&id=2000602921&impressionId=26120ca1-8d20-49c4-bf9c-1338c7bba507",
+    bgColor:
+      "radial-gradient(circle, rgb(227, 6, 19, 0.4), rgb(227, 6, 19, 0.8)",
+    textColor: "rgb(227, 6, 19)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/5",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "HTML",
+        "Tailwind CSS",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, Python, Django, PostgreSQL, React, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, HTML, Tailwind CSS, TypeScript, React, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
