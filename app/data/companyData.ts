@@ -317,4 +317,41 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  timepress: {
+    name: "TIMEPRESS",
+    profession: "Junior Full-Stack Developer",
+    logo: "timepress.svg",
+    companyLink: "https://nabirame.timepress.cz/#aktualni-nabidky",
+    bgColor:
+      "radial-gradient(circle, rgb(255, 105, 0, 0.4), rgb(255, 105, 0, 0.7)",
+    textColor: "rgb(255, 105, 0)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/4 sm:w-1/5 lg:w-1/6",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Python, Django, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "Tailwind CSS",
+        "React",
+        "Next.js",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, JavaScript, React, REST API, PostgreSQL, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, React, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
