@@ -280,43 +280,6 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
-  hptronic: {
-    name: "HP TRONIC",
-    profession: "Junior Full-Stack Developer",
-    logo: "hptronic.svg",
-    companyLink:
-      "https://hptronic.jobs.cz/detail-pozice?r=detail&id=2000602921&impressionId=26120ca1-8d20-49c4-bf9c-1338c7bba507",
-    bgColor:
-      "radial-gradient(circle, rgb(227, 6, 19, 0.4), rgb(227, 6, 19, 0.8)",
-    textColor: "rgb(227, 6, 19)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/5",
-    about:
-      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
-    techStack: {
-      frontend: [
-        "JavaScript",
-        "HTML",
-        "Tailwind CSS",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Material UI",
-        "Redux",
-        "Axios",
-      ],
-      backend: ["Python, Django, PostgreSQL, REST API"],
-      tools: ["Git & GitHub"],
-    },
-    projectTech: {
-      jp: [
-        "JavaScript, Python, Django, PostgreSQL, React, REST API, Material UI, Redux, Axios",
-      ],
-      suma: [
-        "JavaScript, HTML, Tailwind CSS, TypeScript, React, Next.js, Google API",
-      ],
-      div: ["Python, Django, PostgreSQL"],
-    },
-  },
   timepress: {
     name: "TIMEPRESS",
     profession: "Junior Full-Stack Developer",
@@ -354,4 +317,77 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  "24u": {
+    name: "24U s.r.o",
+    profession: "Junior Full-Stack Developer",
+    logo: "24u.jpg",
+    companyLink: "https://24u.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(68, 122, 186, 0.4), rgb(68, 122, 186, 0.9)",
+    textColor: "rgb(68, 122, 186)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/5 lg:w-1/6",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+        "HTML",
+        "TypeScript",
+        "Next.js",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, Python, Django, PostgreSQL, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, HTML, Tailwind CSS, TypeScript, React, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  reas: {
+    name: "Reas.cz",
+    profession: "Junior Full-Stack Developer",
+    logo: "reas.svg",
+    companyLink: "https://www.reas.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(33, 127, 245, 0.4), rgb(33, 127, 245, 0.9)",
+    textColor: "rgb(33, 127, 245)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/4",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (Next.js, React, TypeScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, Python, Django, PostgreSQL, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, Next.js, React, HTML, Tailwind CSS, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
+
