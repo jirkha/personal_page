@@ -498,5 +498,43 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  acantha: {
+    name: "Acantha",
+    profession: "Junior Full-Stack Developer",
+    logo: "acantha.svg",
+    companyLink:
+      "https://www.acantha.cz/volne-pozice/?r=detail&id=2000612559&impressionId=342ee589-600a-47fb-9287-145809feb358",
+    bgColor:
+      "radial-gradient(circle, rgb(214, 36, 19, 0.3), rgb(214, 36, 19, 0.8)",
+    textColor: "rgb(214, 36, 19)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4",
+    about:
+      "I was a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, Redux, TypeScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React",
+        "Redux",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Next.js",
+        "HTML",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, Redux, JavaScript, Python, Django, Material UI, PostgreSQL, REST API, Axios",
+      ],
+      suma: [
+        "React, TypeScript, JavaScript, Tailwind CSS, Next.js, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
 
