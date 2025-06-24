@@ -389,5 +389,114 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  "cz-nic": {
+    name: "CZ.NIC",
+    profession: "Junior Full-Stack Developer",
+    logo: "cz-nic.svg",
+    companyLink: "https://kariera.nic.cz/cs/pracovni-nabidky/11/",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 56, 147, 0.7), rgb(206, 17, 38, 0.7)",
+    textColor: "rgb(206, 17, 38)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 lg:w-1/4",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (JavaScript, React, Django) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "HTML",
+        "Tailwind CSS",
+        "Next.js",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, Python, Django, PostgreSQL, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, React, HTML, Tailwind CSS, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  qest: {
+    name: "QEST",
+    profession: "Junior Full-Stack Developer",
+    logo: "qest.png",
+    companyLink: "https://www.qest.cz/career/464405",
+    bgColor: "radial-gradient(circle, rgb(0,0,0, 0.3), rgb(131, 225, 255, 0.9)",
+    textColor: "rgb(50, 160, 190)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, Next.js, TypeScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "HTML",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, PostgreSQL, REST API, Django"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, PostgreSQL, REST API, Python, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
+  pfp: {
+    name: "PFP Innovations",
+    profession: "Junior Full-Stack Developer",
+    logo: "pfp.jpeg",
+    companyLink: "https://www.pfpinnovations.com/career/positions/fullstack",
+    bgColor:
+      "radial-gradient(circle, rgb(226, 184, 20, 0.3), rgb(226, 184, 20, 0.7)",
+    textColor: "rgb(226, 184, 20)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, JavaScript, Tailwind) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind CSS",
+        "Next.js",
+        "HTML",
+        "Material UI",
+        "Redux",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, Material UI, PostgreSQL, REST API, Redux, Axios",
+      ],
+      suma: [
+        "React, Tailwind CSS, TypeScript, JavaScript, Next.js, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
 
