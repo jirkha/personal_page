@@ -8,7 +8,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const items: { label: string; page: string }[] = [
   {
     label: "Úvod",
-    page: "/",
+    page: "home",
   },
   {
     label: "O mně",
