@@ -25,15 +25,12 @@ function Home() {
             </p>
             <div className="flex flex-row mt-8">
               <a
-                className=""
+                className="transition delay-150 duration-300 ease-in-out hover:scale-110"
                 href="https://www.linkedin.com/in/ji%C5%99%C3%AD-vecko-44579b127/"
               >
                 <BsLinkedin size={56} className="text-slate-100" />
               </a>
-              <a
-                className="ml-8"
-                href="https://github.com/jirkha"
-              >
+              <a className="ml-8 transition delay-150 duration-300 ease-in-out hover:scale-110" href="https://github.com/jirkha">
                 <FaGithub size={56} className="text-slate-100" />
               </a>
             </div>
