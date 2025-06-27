@@ -30,7 +30,10 @@ function Home() {
               >
                 <BsLinkedin size={56} className="text-slate-100" />
               </a>
-              <a className="ml-8 transition delay-150 duration-300 ease-in-out hover:scale-110" href="https://github.com/jirkha">
+              <a
+                className="ml-8 transition delay-100 duration-80 ease-in-out hover:scale-110"
+                href="https://github.com/jirkha"
+              >
                 <FaGithub size={56} className="text-slate-100" />
               </a>
             </div>

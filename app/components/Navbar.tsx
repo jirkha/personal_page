@@ -46,7 +46,7 @@ function Navbar() {
         <ul className="hidden text-xl lg:flex space-x-8 mr-10 text-slate-100">
           {items.map(({ label, page }) => (
             <li
-              className="p-3 hover:text-amber-100 hover:underline decoration-1 cursor-pointer"
+              className="p-3 hover:text-amber-100 hover:underline decoration-1 cursor-pointer transition delay-100 duration-80 ease-in-out hover:scale-110"
               key={page}
             >
               <a

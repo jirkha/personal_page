@@ -56,7 +56,7 @@ function Projects() {
           {projects.map(({ name, about, img, demo, code }) => (
             <div
               key={name}
-              className="justify-between flex flex-col hover:scale-105 bg-slate-600 rounded w-64 h-auto m-3 shadow-inner shadow-slate-400"
+              className="justify-between flex flex-col transition delay-100 duration-100 ease-in-out hover:scale-105 bg-slate-600 rounded w-64 h-auto m-3 shadow-inner shadow-slate-400 [backface-visibility:hidden]"
             >
               <div>
                 {" "}
