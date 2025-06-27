@@ -35,7 +35,7 @@ function Navbar() {
   return (
     <header
       className="sticky top-0 w-full bg-black
-        md:bg-gradient-to-r from-black to-neutral-800"
+        md:bg-gradient-to-r from-black to-neutral-800 z-50"
     >
       <nav className="flex items-center justify-between shadow max-w-[1220px] mx-auto">
         <Image
