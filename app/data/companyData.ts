@@ -510,7 +510,7 @@ export const companyData: { [key: string]: CompanyData } = {
     imgClass:
       "mx-auto lg:mx-0 lg:-mt-10 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4",
     about:
-      "I was a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, Redux, TypeScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, Redux, TypeScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
     techStack: {
       frontend: [
         "React",
@@ -532,6 +532,80 @@ export const companyData: { [key: string]: CompanyData } = {
       ],
       suma: [
         "React, TypeScript, JavaScript, Tailwind CSS, Next.js, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  pixelfield: {
+    name: "Pixelfield",
+    profession: "Junior Full-Stack Developer",
+    logo: "pixelfield.png",
+    companyLink: "https://pixelfield.cz/kariera/",
+    bgColor:
+      "radial-gradient(circle, rgb(191, 127, 51, 0.3), rgb(191, 127, 51, 0.7)",
+    textColor: "rgb(191, 127, 51)",
+    imgClass:
+      "mx-auto lg:mx-0 -my-16 -mb-14 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (React, JavaScript) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "Tailwind CSS",
+        "Next.js",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, Material UI, Redux, PostgreSQL, REST API, Axios",
+      ],
+      suma: [
+        "React, TypeScript, JavaScript, HTML, Tailwind CSS, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  ynput: {
+    name: "ynput",
+    profession: "Junior Full-Stack Developer",
+    logo: "ynput.svg",
+    companyLink: "https://ynput.io/company/",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 215, 160, 0.3), rgb(0, 215, 160, 0.7)",
+    textColor: "rgb(0, 215, 160)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-1/4",
+    about:
+      "I have been a transport specialist. Since 2021, I have been learning programming. I create my own projects (TypeScript, Next.js, Python) and further develop my skills in the field. Now, I am looking for a job opportunity in ",
+    techStack: {
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "React",
+        "HTML",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, PostgreSQL, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, Next.js, React, HTML, Tailwind CSS, Google API",
       ],
       div: ["Python, Django, PostgreSQL"],
     },
