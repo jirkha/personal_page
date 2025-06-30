@@ -3,12 +3,12 @@ import { redirect } from "next/navigation";
 import { companyData, CompanyData } from "../../data/companyData";
 import ResumeCompany from "../../components/ResumeCompany";
 
-interface PageParams {
+interface ResolvedPageParams {
   nameOfTheCompany: string;
 }
 
 interface PageProps {
-  params: PageParams;
+  params: Promise<ResolvedPageParams>;
 }
 
 async function CompanyCV({ params }: PageProps): Promise<JSX.Element> {
