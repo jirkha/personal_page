@@ -9,8 +9,8 @@ type Props = {
   };
 };
 
-function CompanyCV({ params }: Props): JSX.Element {
-  const { nameOfTheCompany } = params;
+async function CompanyCV({ params }: Props): Promise<JSX.Element> {
+  const { nameOfTheCompany } = await params;
 
   if (!companyData[nameOfTheCompany]) {
     redirect("/cv");
