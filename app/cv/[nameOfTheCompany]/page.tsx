@@ -3,15 +3,16 @@ import { redirect } from "next/navigation";
 import { companyData, CompanyData } from "../../data/companyData";
 import ResumeCompany from "../../components/ResumeCompany";
 
-interface Props {
-  params: {
-    nameOfTheCompany: string;
-  };
+interface PageParams {
+  nameOfTheCompany: string;
 }
 
-async function CompanyCV({ params }: Props): Promise<JSX.Element> {
-  const awaitedParams = await params;
-  const { nameOfTheCompany } = awaitedParams;
+interface PageProps {
+  params: PageParams;
+}
+
+async function CompanyCV({ params }: PageProps): Promise<JSX.Element> {
+  const { nameOfTheCompany } = await params;
 
   if (!companyData[nameOfTheCompany]) {
     redirect("/cv");
