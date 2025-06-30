@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-typescript: #007acc;
+    --color-javascript: #F0DB4F;
+    --color-react: #61DBFB;
+    --color-html: #E34C26;
+    --color-css: #2565AE;
+    --color-tailwind: #3490dc;
+    --color-python: #fbcb24;
+    --color-django: #092e20;
+    --color-pandas: #E70488;
+    --color-postgre: #008bb9;
+    --color-nextjs: #a8b9c0; }

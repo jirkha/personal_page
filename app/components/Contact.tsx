@@ -53,20 +53,20 @@ function Contact() {
               type="text"
               name="name"
               placeholder="Jméno"
-              className="rounded py-2 my-2 px-3 max-w-screen-sm"
+              className="rounded bg-amber-50 py-2 my-2 px-3 max-w-screen-sm"
               required
             />
             <input
               type="email"
               name="email"
               placeholder="E-mail"
-              className="rounded py-2 my-2 px-3 max-w-screen-sm"
+              className="rounded bg-amber-50 py-2 my-2 px-3 max-w-screen-sm"
               required
             />
             <textarea
               name="message"
               placeholder="Zpráva"
-              className="rounded py-2 my-2 px-3 max-w-screen-sm h-64 min-h-fit"
+              className="rounded bg-amber-50 py-2 my-2 px-3 max-w-screen-sm h-64 min-h-fit"
               required
             />
             <input
