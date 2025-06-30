@@ -1,16 +1,17 @@
-import React from "react";
+import * as React from "react";
 import { redirect } from "next/navigation";
 import { companyData, CompanyData } from "../../data/companyData";
 import ResumeCompany from "../../components/ResumeCompany";
 
-type Props = {
+interface Props {
   params: {
     nameOfTheCompany: string;
   };
-};
+}
 
 async function CompanyCV({ params }: Props): Promise<JSX.Element> {
-  const { nameOfTheCompany } = await params;
+  const awaitedParams = await params;
+  const { nameOfTheCompany } = awaitedParams;
 
   if (!companyData[nameOfTheCompany]) {
     redirect("/cv");
