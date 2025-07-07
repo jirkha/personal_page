@@ -32,7 +32,7 @@ const PDFDownload = ({ nameOfTheCompany, color }: PDFDownloadButtonProps) => {
           >
             {({ loading }) => (
               <button
-                className="w-40 bg-white hover:bg-neutral-100 font-bold font-sans text-lg border-2 rounded-lg px-4 py-2 cursor-pointer shadow-md shadow-black"
+                className="2xl:w-40 bg-white hover:bg-neutral-100 font-bold font-sans text-lg border-2 rounded-lg px-4 py-2 cursor-pointer shadow-md shadow-black"
                 style={{
                   color: color,
                 }}

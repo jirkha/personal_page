@@ -28,16 +28,11 @@ async function CompanyCV({ params }: PageProps): Promise<JSX.Element> {
       style={{ background: company.bgColor }}
     >
       {/* MENŠÍ ZAŘÍZENÍ – tlačítko nahoře, součást scrollu */}
-      <div className="flex flex-row justify-center 2xl:hidden text-center mb-4">
+      <div className="flex justify-center 2xl:hidden text-center mb-4">
         <PDFDownloadButton
           nameOfTheCompany={nameOfTheCompany}
           color={company.textColor}
         />
-        <Link href={`/cv/${nameOfTheCompany}/pdf`}>
-          <button className="w-40 bg-white hover:bg-neutral-100 font-bold font-sans text-gray-600 text-lg border-2 border-gray-600 rounded-lg px-4 py-2 ml-3 cursor-pointer shadow-md shadow-black">
-            Zobraz PDF
-          </button>
-        </Link>
       </div>
 
       {/* VĚTŠÍ ZAŘÍZENÍ – fixní tlačítko napravo */}
