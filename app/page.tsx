@@ -1,9 +1,9 @@
-import About from "@/app/components/about";
-import Home from "@/app/components/home";
-import Skills from "@/app/components/skills";
-import styles from "./page.module.css";
-import Projects from "./components/projects";
-import Contact from "./components/contact";
+import About from "./components/About";
+import Home from "./components/Home";
+import Skills from "./components/Skills";
+//import styles from "./page.module.css";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 export default function Page() {
   return (

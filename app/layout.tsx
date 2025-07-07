@@ -1,15 +1,11 @@
 import "./globals.css";
-import Background from "./components/background";
+import Background from "@/app/components/Background";
 import {
   //Inter,
   Courier_Prime,
 } from "next/font/google";
-import Navbar from "./components/navbar";
+import Navbar from "@/app/components/Navbar";
 
-// const inter = Inter({
-//   subsets: ['latin'],
-//   display: 'swap',
-// })
 const courier = Courier_Prime({
   subsets: ["latin"],
   display: "swap",
