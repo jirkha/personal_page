@@ -1,6 +1,6 @@
 // pages/cv.js
 import React from "react";
-import ResumeEN from "../components/ResumeEN";
+import ResumeEN from "../components/resume/resume-en";
 
 const CV = () => {
   return (

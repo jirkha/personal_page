@@ -32,7 +32,7 @@ function Home(): JSX.Element {
   };
   
   return (
-    <div id="home">
+    <div id="home" className="scroll-mt-28">
       <motion.article
         className="grid my-6 lg:my-12 justify-items-center w-auto md:flex md:justify-around items-center"
         variants={containerVariants}

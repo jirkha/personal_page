@@ -1,10 +1,10 @@
-import './globals.css'
-import Background from "./components/Background";
+import "./globals.css";
+import Background from "./components/background";
 import {
   //Inter,
   Courier_Prime,
 } from "next/font/google";
-import Navbar from './components/Navbar';
+import Navbar from "./components/navbar";
 
 // const inter = Inter({
 //   subsets: ['latin'],
@@ -41,18 +41,19 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  
   return (
     <html lang="cs-cz" className={courier.className}>
       <head>
         <title>Jiří Vecko</title>
       </head>
-      <Background>
-        <Navbar />
-        {children}
-      </Background>
+      <body>
+        <Background>
+          <Navbar />
+          {children}
+        </Background>
+      </body>
     </html>
   );
 }

@@ -46,7 +46,7 @@ const projects: {
 
 function Projects() {
   return (
-    <div id="projects" className="m-9 my-40">
+    <div id="projects" className="m-9 my-40 scroll-mt-28">
       <section>
         <h2 className="text-5xl sm:text-6xl text-slate-100 tracking-wide">
           Projekty

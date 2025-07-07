@@ -1,9 +1,9 @@
 import React from "react";
 import clsx from "clsx";
 import { Poppins } from "next/font/google";
-import { projects } from "../data/projects";
-import { workExperience } from "../data/workExperience";
-import { companyData, CompanyData } from "../data/companyData";
+import { projects } from "../../data/projects";
+import { workExperience } from "../../data/workExperience";
+import { companyData, CompanyData } from "../../data/companyData";
 
 const opensans = Poppins({
   subsets: ["latin"],
@@ -106,7 +106,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
-            My projects
+            Projekty
           </h2>
           <hr
             className="border-2 my-3"
@@ -129,7 +129,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
               return (
                 <article key={project.name} className="mb-6">
                   <div className="flex flex-col lg:flex-row justify-start items-start lg:items-center mb-1">
-                    <h3 className="text-xl text-zinc-700 font-bold">
+                    <h3 className="text-xl text-zinc-700 font-bold uppercase">
                       {project.name}
                     </h3>
                     {project.demo && (
@@ -150,9 +150,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
                   </p>
 
                   <ul className="ml-8 list-disc text-base text-zinc-700">
-                    {techList.length > 0 && (
-                      <li>{techList[0]}</li> 
-                    )}
+                    {techList.length > 0 && <li>{techList[0]}</li>}
 
                     <li>
                       <a
@@ -174,7 +172,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
-            Work experience
+            Pracovní zkušenosti
           </h2>
           <hr
             className="border-2 my-3"
@@ -206,7 +204,7 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
-            Education
+            Vzdělání
           </h2>
           <hr
             className="border-2 my-3"
@@ -215,33 +213,31 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
           <article className="mb-3">
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
               <h3 className="text-xl text-zinc-700 font-bold">
-                CZECH TECHNICAL UNIVERSITY IN PRAGUE
+                České vysoké učení technické v Praze, Fakulta dopravní
               </h3>
               <p className="text-lg text-zinc-600 lg:ml-4 font-semibold">
                 2016 - 2019
               </p>
             </div>
             <p className="text-base text-zinc-700">
-              Faculty of Transportation Sciences
+              Obor Technika a technologie v dopravě a spojích
             </p>
-            <p className="text-base text-zinc-700">
-              Bachelor&apos;s degree (Bc.)
-            </p>
+            <p className="text-base text-zinc-700">Titul bakalář (Bc.)</p>
           </article>
         </section>
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
-            Languages
+            Jazykové dovednosti
           </h2>
           <hr
             className="border-2 my-3"
             style={{ borderColor: company.textColor }}
           ></hr>
           <article className="mb-3">
-            <p className="text-base text-zinc-700">Czech – Native</p>
-            <p className="text-base text-zinc-700">English – B2</p>
-            <p className="text-base text-zinc-700">German – A2</p>
+            <p className="text-base text-zinc-700">Čeština – rodilý mluvčí</p>
+            <p className="text-base text-zinc-700">Angličtina – B2</p>
+            <p className="text-base text-zinc-700">Němčina – A2</p>
           </article>
         </section>
       </div>

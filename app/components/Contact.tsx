@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 function Contact() {
   return (
-    <div className="m-9 my-28" id="contact">
+    <div className="m-9 my-28 scroll-mt-28" id="contact">
       <article>
         <header>
           <h2 className="text-5xl sm:text-6xl text-slate-100 tracking-wide">

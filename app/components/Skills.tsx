@@ -121,7 +121,7 @@ const colorHoverClasses: { [key: string]: string } = {
 
 function Skills() {
   return (
-    <div id="skills" className="m-6 my-28">
+    <div id="skills" className="m-6 my-28 scroll-mt-28">
       <section>
         <h2 className="text-5xl sm:text-6xl text-slate-100 tracking-wide">
           Dovednosti

@@ -11,13 +11,13 @@ export default function Background({
   const isHomePage = pathname === "/" || pathname.startsWith("/#");
 
   return (
-    <body
+    <div
       className={clsx(
         "min-h-full w-full",
         isHomePage && "bg-gradient-to-b from-black to-slate-600"
       )}
     >
       {children}
-    </body>
+    </div>
   );
 }

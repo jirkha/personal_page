@@ -1,7 +1,7 @@
 import React from "react";
 import { Poppins } from "next/font/google";
-import { projects } from "../data/projects";
-import { workExperience } from "../data/workExperience";
+import { projects } from "../../data/projects";
+import { workExperience } from "../../data/workExperience";
 
 const opensans = Poppins({
   subsets: ["latin"],
@@ -9,11 +9,11 @@ const opensans = Poppins({
   weight: "400",
 });
 
-function ResumeSii() {
+function ResumeEN() {
   return (
     <article
-      id="resumesii"
-      className="mt-4 p-8 max-w-[900px] lg:mx-auto bg-gray-100"
+      id="resumeen"
+      className="mt-4 p-8 max-w-[900px] lg:mx-auto bg-gray-100 border-neutral-900 border-2"
     >
       <div className={opensans.className}>
         <header>
@@ -21,18 +21,18 @@ function ResumeSii() {
             <h1 className="mr-3 text-5xl text-zinc-900 font-bold tracking-widest">
               Jiří Vecko
             </h1>
-            <h1 className="ml-3 text-5xl text-[#045A9F] font-bold tracking-widest">
+            <h1 className="ml-3 text-5xl text-teal-700 font-bold tracking-widest">
               CV
             </h1>
           </div>
-          <p className="mt-2 text-3xl text-left text-zinc-900 tracking-wide">
+          <p className="mt-2 text-3xl text-left	text-zinc-900 tracking-wide">
             Junior Full-Stack Developer
           </p>
           <p className="mt-3 text-base text-left text-zinc-800">
             +420 721 665 444 | veckoj@seznam.cz |{" "}
             <a
               href="https://www.linkedin.com/in/jiri-vecko/"
-              className="text-base underline text-zinc-700"
+              className="text-base underline text-teal-700"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +41,7 @@ function ResumeSii() {
             |{" "}
             <a
               href="https://github.com/jirkha"
-              className="text-base underline text-zinc-700"
+              className="text-base underline text-teal-700"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -49,32 +49,22 @@ function ResumeSii() {
             </a>
           </p>
           <p className="mt-4 text-justify text-lg text-zinc-900">
-            I have been a transport specialist. My biggest motivation in life is
-            the desire to learn new things, so I started programming in 2021 and
-            have been continuously improving through education and project
-            development (JavaScript, React). Now, I am looking for a job
-            opportunity in{" "}
-            <a
-              href="https://sii-group.com/en-CZ/offers/software-development/frontend-developer-digital-identity-platform"
-              className="text-[#045A9F] underline decoration-solid underline-offset-4 decoration-2 decoration-zinc-700"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              SII Czech Republic
-            </a>
-            .
+            I have been a transport specialist. Since 2021, I have been learning
+            programming. I create my own projects (JavaScript, Python) and further
+            develop my skills in the field. Now, I am looking for a job
+            opportunity.
           </p>
         </header>
 
         <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
             Tech Stack
           </h2>
-          <hr className="border-[#045A9F] border-2 my-3"></hr>
+          <hr className="border-zinc-500 my-3"></hr>
           <ul className="ml-8 list-disc text-base text-zinc-900 tracking-wide">
             <li>
-              JavaScript, TypeScript, HTML, React, Next.js, Material UI,
-              Tailwind CSS, Redux, Axios
+              JavaScript, TypeScript, React, Next.js, Material UI, Tailwind CSS,
+              Redux, Axios
             </li>
             <li>Python, Django, PostgreSQL, REST API</li>
             <li>Git & GitHub</li>
@@ -82,10 +72,10 @@ function ResumeSii() {
         </section>
 
         <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
             My projects
           </h2>
-          <hr className="border-[#045A9F] border-2 my-3"></hr>
+          <hr className="border-zinc-500 my-3"></hr>
           <div>
             {projects.map((project) => (
               <article key={project.name} className="mb-6">
@@ -96,7 +86,7 @@ function ResumeSii() {
                   {project.demo && (
                     <a
                       href={project.demo}
-                      className="text-base underline text-zinc-700 lg:ml-4"
+                      className="text-base underline text-teal-700 lg:ml-4"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -114,7 +104,7 @@ function ResumeSii() {
                   <li>
                     <a
                       href={project.code}
-                      className="underline break-words"
+                      className="underline break-words text-teal-700"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -128,10 +118,10 @@ function ResumeSii() {
         </section>
 
         <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
             Work experience
           </h2>
-          <hr className="border-[#045A9F] border-2 my-3"></hr>
+          <hr className="border-zinc-500 my-3"></hr>
           <div>
             {workExperience.map((job) => (
               <article key={job.position} className="mb-6">
@@ -157,10 +147,10 @@ function ResumeSii() {
         </section>
 
         <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
             Education
           </h2>
-          <hr className="border-[#045A9F] border-2 my-3"></hr>
+          <hr className="border-zinc-500 my-3"></hr>
           <article className="mb-3">
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
               <h3 className="text-xl text-zinc-700 font-bold">
@@ -180,10 +170,10 @@ function ResumeSii() {
         </section>
 
         <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
             Languages
           </h2>
-          <hr className="border-[#045A9F] border-2 my-3"></hr>
+          <hr className="border-zinc-500 my-3"></hr>
           <article className="mb-3">
             <p className="text-base text-zinc-700">Czech – Native</p>
             <p className="text-base text-zinc-700">English – B2</p>
@@ -195,4 +185,4 @@ function ResumeSii() {
   );
 }
 
-export default ResumeSii;
+export default ResumeEN;
