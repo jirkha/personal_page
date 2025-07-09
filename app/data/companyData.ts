@@ -472,5 +472,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  manGoweb: {
+    name: "manGoweb",
+    profession: "Junior Full-Stack Developer",
+    logo: "manGoweb.png",
+    companyLink: "https://www.mangoweb.cz/",
+    bgColor: "radial-gradient(circle, rgb(1, 0, 255, 0.2), rgb(1, 0, 255, 0.4)",
+    textColor: "rgb(1, 0, 255)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (React, TypeScript, PostgreSQL) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "Tailwind CSS",
+        "Next.js",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, PostgreSQL, Python, JavaScript, REST API, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, React, Next.js, HTML, Tailwind CSS, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
 };
 ;
