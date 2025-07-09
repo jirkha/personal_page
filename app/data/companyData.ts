@@ -436,4 +436,41 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  grandit: {
+    name: "Grand IT",
+    profession: "Junior Full-Stack Developer",
+    logo: "grandit.png",
+    companyLink: "https://www.grandit.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(243, 146, 0, 0.3), rgb(243, 146, 0, 0.7)",
+    textColor: "rgb(243, 146, 0)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/6",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (Python, JavaScript, PostgreSQL) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "Tailwind CSS",
+        "React",
+        "Next.js",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, JavaScript, React, PostgreSQL, REST API, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
 };
+;
