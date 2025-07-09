@@ -372,8 +372,7 @@ export const companyData: { [key: string]: CompanyData } = {
     bgColor:
       "radial-gradient(circle, rgb(255, 159, 66, 0.3), rgb(255, 159, 66, 0.7)",
     textColor: "rgb(255, 159, 66)",
-    imgClass:
-      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
     about:
       "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (JavaScript, React, HTML) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
     techStack: {
@@ -399,6 +398,42 @@ export const companyData: { [key: string]: CompanyData } = {
         "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
       ],
       div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  provys: {
+    name: "PROVYS Technologies",
+    profession: "Junior Full-Stack Developer",
+    logo: "provys.png",
+    companyLink: "https://jobs.provys.com/projektovy-programator/",
+    bgColor:
+      "radial-gradient(circle, rgb(241, 142, 19, 0.3), rgb(241, 142, 19, 0.7)",
+    textColor: "rgb(241, 142, 19)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (Python, PostgreSQL, JavaScript) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, React, JavaScript, REST API, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
     },
   },
 };
