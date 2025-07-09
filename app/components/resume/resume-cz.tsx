@@ -11,7 +11,7 @@ function ResumeCZ() {
   return (
     <article
       id="resumeen"
-      className="mt-4 p-8 max-w-[900px] lg:mx-auto bg-gray-100 border-neutral-900 border-2"
+      className="p-8 max-w-[900px] lg:mx-auto bg-gray-100 border-neutral-900 border-2"
     >
       <div className={opensans.className}>
         <header>
