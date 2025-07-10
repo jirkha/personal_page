@@ -625,7 +625,7 @@ export const companyData: { [key: string]: CompanyData } = {
     textColor: "rgb(222, 37, 45)",
     imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 md:w-1/4",
     about:
-      "Dosud jsem byl dopravním specialistou se specializací na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+      "Dosud jsem byl dopravním specialistou se zaměřením na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
     techStack: {
       frontend: [
         "JavaScript",
