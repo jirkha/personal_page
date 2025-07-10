@@ -615,4 +615,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  ntk: {
+    name: "Národní technické knihovně",
+    profession: "IT | Projektový management",
+    logo: "ntk.png",
+    companyLink: "https://www.techlib.cz/cs/2806-kariera-v-ntk#PMK",
+    bgColor:
+      "radial-gradient(circle, rgb(222, 37, 45, 0.2), rgb(222, 37, 45, 0.5)",
+    textColor: "rgb(222, 37, 45)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 md:w-1/4",
+    about:
+      "Dosud jsem byl dopravním specialistou se specializací na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Axios",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+      ],
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
 };

@@ -1,10 +1,10 @@
 export const workExperience = [
   {
-    position: "VEDOUCÍ ODBORU",
+    position: "VEDOUCÍ ODBORU ŽELEZNIČNÍ DOPRAVY",
     years: "2022-2024",
     company: "IDSK",
     description:
-      "Vedoucí odboru železniční dopravy (vedení týmu, projektové řízení, řešení strategických i provozních úkolů)",
+      "Vedení týmu, projektové řízení, řešení strategických i provozních úkolů",
   },
   {
     position: "PROJEKTOVÝ MANAŽER",
@@ -20,11 +20,11 @@ export const workExperience = [
     description: "Správa webových stránek a HR marketing",
   },
   {
-    position: "PROJEKTANT DOPRAVY",
+    position: "KOORDINÁTOR A PROJEKTANT DOPRAVY",
     years: "2017-2020",
     company: "IDSK",
     description:
-      "Koordinace týmu, práce se softwarem pro tvorbu jízdních řádů a analytika",
+      "Koordinace týmu, práce se specializovaným softwarem pro tvorbu jízdních řádů a analytická činnost",
   },
   {
     position: "SUPERVIZOR",
