@@ -204,7 +204,7 @@ function ResumeCZ() {
               Integrovaná doprava Středočeského kraje
             </p>
             <p className="text-base text-zinc-700">
-              Vedení týmu, projektové řízení, řešení strategických i provozních
+              Vedení týmů, projektové řízení, řešení strategických i provozních
               úkolů
             </p>
           </article>
@@ -247,7 +247,7 @@ function ResumeCZ() {
           <article className="mb-3">
             <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
               <h3 className="text-2xl text-zinc-700 font-semibold">
-                Projektant dopravy
+                Koordinátor a projektant dopravy
               </h3>
               <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
                 2017 - 2020
@@ -257,8 +257,8 @@ function ResumeCZ() {
               Integrovaná doprava Středočeského kraje
             </p>
             <p className="text-base text-zinc-700">
-              Koordinace týmu, práce se softwarem pro tvorbu jízdních řádů a
-              analytika
+              Koordinace týmu, práce se specializovaným softwarem pro tvorbu
+              jízdních řádů a analytická činnost
             </p>
           </article>
 

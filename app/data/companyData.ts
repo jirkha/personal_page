@@ -579,4 +579,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  "4max": {
+    name: "4MAX",
+    profession: "Projektový management | IT",
+    logo: "4max.svg",
+    companyLink: "https://www.4max.com/volna-mista/",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 92, 185, 0.3), rgb(0, 92, 185, 0.7)",
+    textColor: "rgb(0, 92, 185)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 md:w-1/4",
+    about:
+      "Dosud jsem byl dopravním specialistou se specializací na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Axios",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
 };
