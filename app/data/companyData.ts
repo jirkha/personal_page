@@ -515,10 +515,45 @@ export const companyData: { [key: string]: CompanyData } = {
     bgColor:
       "radial-gradient(circle, rgb(0, 174, 239, 0.3), rgb(0, 174, 239, 0.7)",
     textColor: "rgb(0, 174, 239)",
-    imgClass:
-      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
     about:
       "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (Python, PostgreSQL, JavaScript) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Axios",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
+  socosit: {
+    name: "SOCOS IT",
+    profession: "Junior Developer | Projektový management",
+    logo: "socosit.png",
+    companyLink: "https://www.socosit.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(1, 101, 187, 0.3), rgb(1, 101, 187, 0.7)",
+    textColor: "rgb(1, 101, 187)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/5",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT a programování. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
     techStack: {
       backend: ["Python, PostgreSQL, Django, REST API"],
       frontend: [
