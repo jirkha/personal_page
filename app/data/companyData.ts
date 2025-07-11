@@ -687,4 +687,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  "media-factory": {
+    name: "MEDIA FACTORY",
+    profession: "Junior Full-Stack Developer",
+    logo: "media-factory.png",
+    companyLink: "https://www.mediafactory.cz/kariera/",
+    bgColor:
+      "radial-gradient(circle, rgb(210, 29, 40, 0.6), rgb(210, 29, 40, 0.3)",
+    textColor: "rgb(210, 29, 40)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/6",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (TypeScript, React, Next.js) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js (App Router)",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, REST API, PostgreSQL, Python, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
