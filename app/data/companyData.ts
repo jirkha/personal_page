@@ -651,4 +651,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  creativeheroes: {
+    name: "Creative Heroes",
+    profession: "Junior Full-Stack Developer",
+    logo: "creativeheroes.jpeg",
+    companyLink: "https://sluzby.creativeheroes.cz/hiring/",
+    bgColor:
+      "radial-gradient(circle, rgb(255, 192, 0, 0.3), rgb(255, 192, 0, 0.6)",
+    textColor: "rgb(204, 154, 0)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/6",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (React, TypeScript) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "Tailwind CSS",
+        "Next.js",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "React, PostgreSQL, Python, JavaScript, REST API, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, React, Next.js, HTML, Tailwind CSS, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
