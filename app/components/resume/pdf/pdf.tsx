@@ -24,14 +24,14 @@ const styles = StyleSheet.create({
   name: {
     fontFamily: "Open Bold",
     letterSpacing: 1,
-    fontSize: 34,
+    fontSize: 35,
     marginBottom: -10,
     color: "#20124D",
   },
   title: {
     fontFamily: "Open Bold",
     letterSpacing: 1,
-    fontSize: 16,
+    fontSize: 17,
     marginBottom: 6,
     color: "#20124D",
   },
