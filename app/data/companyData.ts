@@ -760,4 +760,40 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
+  inizio: {
+    name: "INIZIO Internet Media",
+    profession: "Junior Full-Stack Developer",
+    logo: "inizio.png",
+    companyLink: "https://mozna.inizio.cz/success",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 87, 138, 0.6), rgb(0, 87, 138, 0.3)",
+    textColor: "rgb(0, 87, 138)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/5",
+    about:
+      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "JavaScript, React, REST API, PostgreSQL, Python, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
