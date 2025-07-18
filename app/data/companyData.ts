@@ -651,42 +651,6 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
-  creativeheroes: {
-    name: "Creative Heroes",
-    profession: "Junior Full-Stack Developer",
-    logo: "creativeheroes.jpeg",
-    companyLink: "https://sluzby.creativeheroes.cz/hiring/",
-    bgColor:
-      "radial-gradient(circle, rgb(255, 192, 0, 0.3), rgb(255, 192, 0, 0.6)",
-    textColor: "rgb(204, 154, 0)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 sm:w-1/4 md:w-1/6",
-    about:
-      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (React, TypeScript) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
-    techStack: {
-      frontend: [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "Tailwind CSS",
-        "Next.js",
-        "Redux",
-        "Material UI",
-        "Axios",
-      ],
-      backend: ["Python, Django, PostgreSQL, REST API"],
-      tools: ["Git & GitHub"],
-    },
-    projectTech: {
-      jp: [
-        "React, PostgreSQL, Python, JavaScript, REST API, Django, Material UI, Redux, Axios",
-      ],
-      suma: [
-        "TypeScript, JavaScript, React, Next.js, HTML, Tailwind CSS, Google API",
-      ],
-      div: ["Python, Django, PostgreSQL"],
-    },
-  },
   "media-factory": {
     name: "MEDIA FACTORY",
     profession: "Junior Full-Stack Developer",
@@ -789,6 +753,42 @@ export const companyData: { [key: string]: CompanyData } = {
     projectTech: {
       jp: [
         "JavaScript, React, REST API, PostgreSQL, Python, Django, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  smarteon: {
+    name: "Smarteon",
+    profession: "Junior Full-Stack Developer",
+    logo: "smarteon.png",
+    companyLink: "https://www.smarteon.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(217, 148, 16, 0.7), rgb(217, 148, 16, 0.2)",
+    textColor: "rgb(217, 148, 16)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-80",
+    about:
+      "Od roku 2021 se nadšeně věnuji programování. Vytvářím vlastní projekty (TypeScript, Python) a začínám profesní dráhu v tomto oboru. Nyní hledám pracovní příležitost ve ",
+    techStack: {
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      tools: ["Git & GitHub"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, REST API, PostgreSQL, JavaScript, React, Material UI, Redux, Axios",
       ],
       suma: [
         "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",

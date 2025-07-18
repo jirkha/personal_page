@@ -47,9 +47,9 @@ function ResumeCZ() {
             </a>
           </p>
           <p className="mt-2 text-lg text-zinc-900 tracking-wide">
-            Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně
-            věnuji programování. Vytvářím vlastní projekty (JavaScript, Python)
-            a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost.
+            Od roku 2021 se nadšeně věnuji programování. Vytvářím vlastní
+            projekty a začínám profesní dráhu v tomto oboru. Nyní hledám
+            pracovní příležitost.
           </p>
         </header>
 
@@ -66,6 +66,139 @@ function ResumeCZ() {
             <li>Python, Django, PostgreSQL, REST API</li>
             <li>Git & GitHub</li>
           </ul>
+        </section>
+
+        <section className="mt-3">
+          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
+            Pracovní zkušenosti
+          </h2>
+          <hr className="border-zinc-500 my-3"></hr>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Softwarový inženýr
+              </h3>
+
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2025
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">Big Terra</p>
+            <p className="text-base text-zinc-700">
+              Full-stack development v rámci týmu, samostatná příprava kódu pro
+              bezpečnostní audit
+            </p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Vedoucí odboru železniční dopravy
+              </h3>
+
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2022 - 2024
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">
+              Integrovaná doprava Středočeského kraje
+            </p>
+            <p className="text-base text-zinc-700">
+              Vedení týmů, projektové řízení, řešení strategických i provozních
+              úkolů
+            </p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Projektový manažer
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2020 - 2022
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">
+              Magistrát hl. m. Prahy
+            </p>
+            <p className="text-base text-zinc-700">
+              Projektové řízení Plánu udržitelné mobility a vedení expertní
+              skupiny
+            </p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Specialista spolupráce se školami
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2019 - 2020
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">
+              Správa železnic
+            </p>
+            <p className="text-base text-zinc-700">
+              Správa webových stránek a HR marketing
+            </p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Koordinátor a projektant dopravy
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2017 - 2020
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">
+              Integrovaná doprava Středočeského kraje
+            </p>
+            <p className="text-base text-zinc-700">
+              Koordinace týmu, práce se specializovaným softwarem pro tvorbu
+              jízdních řádů a analytická činnost
+            </p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Supervizor / Zaměstnanec specializované kontroly / Vlakvedoucí,
+                průvodčí
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2008 - 2017
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
+          </article>
+
+          {/* <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Zaměstnanec specializované kontroly
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2011 - 2014
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
+          </article>
+
+          <article className="mb-3">
+            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
+              <h3 className="text-2xl text-zinc-700 font-semibold">
+                Vlakvedoucí, průvodčí
+              </h3>
+              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
+                2008 - 2011
+              </p>
+            </div>
+            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
+          </article> */}
         </section>
 
         <section className="mt-3">
@@ -182,120 +315,6 @@ function ResumeCZ() {
                 </a>
               </li>
             </ul>
-          </article>
-        </section>
-
-        <section className="mt-3">
-          <h2 className="text-3xl	text-zinc-700 font-bold tracking-wide">
-            Pracovní zkušenosti
-          </h2>
-          <hr className="border-zinc-500 my-3"></hr>
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Vedoucí odboru železniční dopravy
-              </h3>
-
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2022 - 2024
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">
-              Integrovaná doprava Středočeského kraje
-            </p>
-            <p className="text-base text-zinc-700">
-              Vedení týmů, projektové řízení, řešení strategických i provozních
-              úkolů
-            </p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Projektový manažer
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2020 - 2022
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">
-              Magistrát hl. m. Prahy
-            </p>
-            <p className="text-base text-zinc-700">
-              Projektové řízení Plánu udržitelné mobility a vedení expertní
-              skupiny
-            </p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Specialista spolupráce se školami
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2019 - 2020
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">
-              Správa železnic
-            </p>
-            <p className="text-base text-zinc-700">
-              Správa webových stránek a HR marketing
-            </p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Koordinátor a projektant dopravy
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2017 - 2020
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">
-              Integrovaná doprava Středočeského kraje
-            </p>
-            <p className="text-base text-zinc-700">
-              Koordinace týmu, práce se specializovaným softwarem pro tvorbu
-              jízdních řádů a analytická činnost
-            </p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Supervizor
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2014 - 2017
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Zaměstnanec specializované kontroly
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2011 - 2014
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
-          </article>
-
-          <article className="mb-3">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-              <h3 className="text-2xl text-zinc-700 font-semibold">
-                Vlakvedoucí, průvodčí
-              </h3>
-              <p className="text-lg text-zinc-700 lg:ml-4 font-semibold">
-                2008 - 2011
-              </p>
-            </div>
-            <p className="text-base text-zinc-700 font-semibold">České dráhy</p>
           </article>
         </section>
 

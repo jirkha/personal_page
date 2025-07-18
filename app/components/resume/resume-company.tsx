@@ -106,6 +106,38 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
 
         <section className="mt-7">
           <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
+            Pracovní zkušenosti
+          </h2>
+          <hr
+            className="border-2 my-3"
+            style={{ borderColor: company.textColor }}
+          ></hr>
+          <div>
+            {workExperience.map((job) => (
+              <article key={job.position} className="mb-6">
+                <div className="flex flex-col lg:flex-row justify-start items-start">
+                  <h3 className="text-xl lg:max-w-3/4 text-zinc-700 font-bold">
+                    {job.position}
+                  </h3>
+                  <p className="text-lg text-zinc-600 lg:ml-4 font-semibold">
+                    {job.years}
+                  </p>
+                </div>
+                <p className="text-base text-zinc-700 font-semibold">
+                  {job.company}
+                </p>
+                {job.description && (
+                  <p className="text-base text-zinc-700  text-justify">
+                    {job.description}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-7">
+          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
             Projekty
           </h2>
           <hr
@@ -167,38 +199,6 @@ function ResumeCompany({ nameOfTheCompany }: { nameOfTheCompany: string }) {
                 </article>
               );
             })}
-          </div>
-        </section>
-
-        <section className="mt-7">
-          <h2 className="text-3xl text-zinc-700 font-bold tracking-wide">
-            Pracovní zkušenosti
-          </h2>
-          <hr
-            className="border-2 my-3"
-            style={{ borderColor: company.textColor }}
-          ></hr>
-          <div>
-            {workExperience.map((job) => (
-              <article key={job.position} className="mb-6">
-                <div className="flex flex-col lg:flex-row justify-start items-start lg:items-end">
-                  <h3 className="text-xl text-zinc-700 font-bold">
-                    {job.position}
-                  </h3>
-                  <p className="text-lg text-zinc-600 lg:ml-4 font-semibold">
-                    {job.years}
-                  </p>
-                </div>
-                <p className="text-base text-zinc-700 font-semibold">
-                  {job.company}
-                </p>
-                {job.description && (
-                  <p className="text-base text-zinc-700  text-justify">
-                    {job.description}
-                  </p>
-                )}
-              </article>
-            ))}
           </div>
         </section>
 

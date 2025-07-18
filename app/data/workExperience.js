@@ -1,5 +1,12 @@
 export const workExperience = [
   {
+    position: "SOFTWAROVÝ INŽENÝR",
+    years: "2025",
+    company: "Big Terra",
+    description:
+      "Full-stack development v rámci týmu, samostatná příprava kódu pro bezpečnostní audit",
+  },
+  {
     position: "VEDOUCÍ ODBORU ŽELEZNIČNÍ DOPRAVY",
     years: "2022-2024",
     company: "IDSK",
@@ -27,18 +34,24 @@ export const workExperience = [
       "Koordinace týmu, práce se specializovaným softwarem pro tvorbu jízdních řádů a analytická činnost",
   },
   {
-    position: "SUPERVIZOR",
-    years: "2014-2017",
+    position:
+      "SUPERVIZOR, ZAMĚSTNANEC SPECIALIZOVANÉ KONTROLY, VLAKVEDOUCÍ, PRŮVODČÍ",
+    years: "2008-2017",
     company: "České dráhy",
   },
-  {
-    position: "ZAMĚSTNANEC SPECIALIZOVANÉ KONTROLY",
-    years: "2011-2014",
-    company: "České dráhy",
-  },
-  {
-    position: "VLAKVEDOUCÍ, PRŮVODČÍ",
-    years: "2008-2011",
-    company: "České dráhy",
-  },
+  // {
+  //   position: "SUPERVIZOR",
+  //   years: "2014-2017",
+  //   company: "České dráhy",
+  // },
+  // {
+  //   position: "ZAMĚSTNANEC SPECIALIZOVANÉ KONTROLY",
+  //   years: "2011-2014",
+  //   company: "České dráhy",
+  // },
+  // {
+  //   position: "VLAKVEDOUCÍ, PRŮVODČÍ",
+  //   years: "2008-2011",
+  //   company: "České dráhy",
+  // },
 ];

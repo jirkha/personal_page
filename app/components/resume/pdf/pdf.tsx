@@ -41,14 +41,14 @@ const styles = StyleSheet.create({
     color: "#323b4c",
   },
   section: {
-    marginTop: 16,
-    marginBottom: 8,
+    marginTop: 10,
+    //marginBottom: 2,
   },
   sectionTitle: {
     fontFamily: "Open Bold",
     fontSize: 20,
     fontWeight: "bold",
-    marginBottom: 5,
+    marginBottom: 2,
     color: "#20124D",
   },
   text: {
@@ -147,6 +147,41 @@ export const ResumePDF = ({ nameOfTheCompany }: PDFRendererProps) => {
           </View>
         </View>
 
+        <View style={ styles.section}>
+          <Text style={{ ...styles.sectionTitle, marginBottom: -10 }}>
+            Pracovní zkušenosti
+          </Text>
+          {workExperience.map((job) => (
+            <View key={job.position}>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  flexWrap: "wrap",
+                  marginTop: 14,
+                }}
+              >
+                <Text style={styles.projectTitle}>
+                  {job.years} | {job.position}
+                </Text>
+                <Text
+                  style={{
+                    fontSize: 12,
+                    color: "#323b4c",
+                    marginHorizontal: 4,
+                  }}
+                >
+                  {" "}
+                </Text>
+                <Text style={styles.text}>{job.company}</Text>
+              </View>
+              {job.description && (
+                <Text style={styles.text}>{job.description}</Text>
+              )}
+            </View>
+          ))}
+        </View>
+
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Projekty</Text>
           {projects.map((project) => {
@@ -202,41 +237,6 @@ export const ResumePDF = ({ nameOfTheCompany }: PDFRendererProps) => {
               </View>
             );
           })}
-        </View>
-
-        <View style={{ ...styles.section, marginTop: -6 }}>
-          <Text style={{ ...styles.sectionTitle, marginBottom: -8 }}>
-            Pracovní zkušenosti
-          </Text>
-          {workExperience.map((job) => (
-            <View key={job.position}>
-              <View
-                style={{
-                  flexDirection: "row",
-                  alignItems: "center",
-                  flexWrap: "wrap",
-                  marginTop: 16,
-                }}
-              >
-                <Text style={styles.projectTitle}>
-                  {job.years} | {job.position}
-                </Text>
-                <Text
-                  style={{
-                    fontSize: 12,
-                    color: "#323b4c",
-                    marginHorizontal: 4,
-                  }}
-                >
-                  {"|"}
-                </Text>
-                <Text style={styles.text}>{job.company}</Text>
-              </View>
-              {job.description && (
-                <Text style={styles.text}>{job.description}</Text>
-              )}
-            </View>
-          ))}
         </View>
 
         <View style={styles.section}>
