@@ -768,7 +768,8 @@ export const companyData: { [key: string]: CompanyData } = {
     bgColor:
       "radial-gradient(circle, rgb(217, 148, 16, 0.7), rgb(217, 148, 16, 0.2)",
     textColor: "rgb(217, 148, 16)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-80",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-80",
     about:
       "Od roku 2021 se nadšeně věnuji programování. Vytvářím vlastní projekty (TypeScript, Python) a začínám profesní dráhu v tomto oboru. Nyní hledám pracovní příležitost ve ",
     techStack: {
@@ -784,7 +785,7 @@ export const companyData: { [key: string]: CompanyData } = {
         "Material UI",
         "Axios",
       ],
-      tools: ["Git & GitHub"],
+      tools: ["Git & GitHub, CI/CD"],
     },
     projectTech: {
       jp: [

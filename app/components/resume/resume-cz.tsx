@@ -64,7 +64,7 @@ function ResumeCZ() {
               Redux, Axios
             </li>
             <li>Python, Django, PostgreSQL, REST API</li>
-            <li>Git & GitHub</li>
+            <li>Git & GitHub, CI/CD</li>
           </ul>
         </section>
 
