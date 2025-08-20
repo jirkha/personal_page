@@ -545,11 +545,11 @@ export const companyData: { [key: string]: CompanyData } = {
     profession: "Projektový management | IT",
     logo: "ackee.png",
     companyLink: "https://www.ackee.cz/",
-    bgColor: "radial-gradient(circle, rgb(0, 0, 255, 0.3), rgb(0, 0, 255, 0.7)",
+    bgColor: "radial-gradient(circle, rgb(0, 0, 255, 0.2), rgb(0, 0, 255, 0.6)",
     textColor: "rgb(0, 0, 255)",
     imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 md:w-1/3",
     about:
-      "Začal jsem profesní dráhu v oboru IT. Mám praxi v projektovém řízení a vedení týmů. Rád bych oba obory propojil a nyní hledám pracovní příležitost v ",
+      "Od roku 2021 se se zapálením věnuji programování. Začal jsem profesní dráhu v oboru IT a mám praxi v projektovém řízení a vedení týmů. Rád bych oba obory propojil v ",
     techStack: {
       backend: ["Python, PostgreSQL, Django, REST API"],
       frontend: [
