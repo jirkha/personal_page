@@ -430,42 +430,6 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
-  ntk: {
-    name: "Národní technické knihovně",
-    profession: "IT | Projektový management",
-    logo: "ntk.png",
-    companyLink: "https://www.techlib.cz/cs/2806-kariera-v-ntk#PMK",
-    bgColor:
-      "radial-gradient(circle, rgb(222, 37, 45, 0.2), rgb(222, 37, 45, 0.5)",
-    textColor: "rgb(222, 37, 45)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 md:w-1/4",
-    about:
-      "Dosud jsem byl dopravním specialistou se zaměřením na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
-    techStack: {
-      frontend: [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Axios",
-        "HTML",
-        "Next.js",
-        "Tailwind CSS",
-        "Redux",
-        "Material UI",
-      ],
-      backend: ["Python, PostgreSQL, Django, REST API"],
-      tools: ["Git & GitHub"],
-    },
-    projectTech: {
-      jp: [
-        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
-      ],
-      suma: [
-        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
-      ],
-      div: ["Python, PostgreSQL, Django"],
-    },
-  },
   inizio: {
     name: "INIZIO Internet Media",
     profession: "Junior Full-Stack Developer",
@@ -537,6 +501,78 @@ export const companyData: { [key: string]: CompanyData } = {
         "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",
       ],
       div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  foxmedia: {
+    name: "Fox Media",
+    profession: "Junior Full-Stack Developer",
+    logo: "foxmedia.png",
+    companyLink: "https://www.foxmedia.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(90, 88, 88, 0.8), rgb(90, 88, 88, 0.3)",
+    textColor: "rgb(90, 88, 88)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-12 lg:ml-auto w-2/3 sm:w-1/2 md:w-1/3 lg:w-80",
+    about:
+      "Od roku 2021 se se zapálením věnuji programování. Vytvářím vlastní projekty (React) a začal jsem profesní dráhu v tomto oboru. Nyní hledám pracovní příležitost ve ",
+    techStack: {
+      frontend: [
+        "React",
+        "HTML",
+        "Tailwind CSS",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, Django, PostgreSQL, REST API"],
+      tools: ["Git & GitHub, CI/CD, Docker"],
+    },
+    projectTech: {
+      jp: [
+        "React, JavaScript, Python, Django, REST API, PostgreSQL, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "React, HTML, Tailwind CSS, TypeScript, JavaScript, Next.js, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
+  ackee: {
+    name: "ackee",
+    profession: "Projektový management | IT",
+    logo: "ackee.png",
+    companyLink: "https://www.ackee.cz/",
+    bgColor: "radial-gradient(circle, rgb(0, 0, 255, 0.3), rgb(0, 0, 255, 0.7)",
+    textColor: "rgb(0, 0, 255)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 md:w-1/3",
+    about:
+      "Začal jsem profesní dráhu v oboru IT. Mám praxi v projektovém řízení a vedení týmů. Rád bych oba obory propojil a nyní hledám pracovní příležitost v ",
+    techStack: {
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Axios",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+      ],
+      tools: ["Git & GitHub, Docker"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
     },
   },
 };

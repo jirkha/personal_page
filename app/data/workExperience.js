@@ -1,10 +1,10 @@
 export const workExperience = [
   {
-    position: "SOFTWAROVÝ INŽENÝR",
+    position: "FULL-STACK DEVELOPER",
     years: "2025",
-    company: "Big Terra",
+    company: "INIZIO",
     description:
-      "Full-stack development v rámci týmu, samostatná příprava kódu pro bezpečnostní audit",
+      "Full-stack development v rámci mezinárodního týmu, zaměření na frontend, backend i DevOps",
   },
   {
     position: "VEDOUCÍ ODBORU ŽELEZNIČNÍ DOPRAVY",
