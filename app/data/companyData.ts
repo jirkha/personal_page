@@ -600,7 +600,7 @@ export const companyData: { [key: string]: CompanyData } = {
         "Axios",
       ],
       backend: ["Python, REST API, Django, PostgreSQL"],
-      tools: ["Git & GitHub, CI/CD"],
+      tools: ["Git & GitHub, Docker, CI/CD"],
     },
     projectTech: {
       jp: [
