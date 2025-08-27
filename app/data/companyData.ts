@@ -358,78 +358,6 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, PostgreSQL, Django"],
     },
   },
-  xreacher: {
-    name: "Xreacher",
-    profession: "Junior Full-Stack Developer",
-    logo: "xreacher.png",
-    companyLink: "https://xreacher.com/",
-    bgColor:
-      "radial-gradient(circle, rgb(0, 174, 239, 0.3), rgb(0, 174, 239, 0.7)",
-    textColor: "rgb(0, 174, 239)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-2/3 md:w-1/3",
-    about:
-      "Dosud jsem byl dopravním specialistou. Od roku 2021 se intenzivně věnuji programování. Vytvářím vlastní projekty (Python, PostgreSQL, JavaScript) a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
-    techStack: {
-      backend: ["Python, PostgreSQL, Django, REST API"],
-      frontend: [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Axios",
-        "HTML",
-        "Next.js",
-        "Tailwind CSS",
-        "Redux",
-        "Material UI",
-      ],
-      tools: ["Git & GitHub"],
-    },
-    projectTech: {
-      jp: [
-        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
-      ],
-      suma: [
-        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
-      ],
-      div: ["Python, PostgreSQL, Django"],
-    },
-  },
-  "4max": {
-    name: "4MAX",
-    profession: "Projektový management | IT",
-    logo: "4max.svg",
-    companyLink: "https://www.4max.com/volna-mista/",
-    bgColor:
-      "radial-gradient(circle, rgb(0, 92, 185, 0.3), rgb(0, 92, 185, 0.7)",
-    textColor: "rgb(0, 92, 185)",
-    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/2 sm:w-1/3 md:w-1/4",
-    about:
-      "Dosud jsem byl dopravním specialistou se specializací na projektové řízení a vedení týmů. Od roku 2021 se intenzivně věnuji rozvoji ve světě IT. Vytvářím vlastní projekty a v oboru se dále vzdělávám. Nyní hledám pracovní příležitost v ",
-    techStack: {
-      backend: ["Python, PostgreSQL, Django, REST API"],
-      frontend: [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Axios",
-        "HTML",
-        "Next.js",
-        "Tailwind CSS",
-        "Redux",
-        "Material UI",
-      ],
-      tools: ["Git & GitHub"],
-    },
-    projectTech: {
-      jp: [
-        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
-      ],
-      suma: [
-        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
-      ],
-      div: ["Python, PostgreSQL, Django"],
-    },
-  },
   inizio: {
     name: "INIZIO Internet Media",
     profession: "Junior Full-Stack Developer",
@@ -573,6 +501,78 @@ export const companyData: { [key: string]: CompanyData } = {
         "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
       ],
       div: ["Python, PostgreSQL, Django"],
+    },
+  },
+  mountain_lift: {
+    name: "Mountain Lift",
+    profession: "Projektový management | IT",
+    logo: "mountain_lift.jpg",
+    companyLink: "https://mountainlift.cz/",
+    bgColor:
+      "radial-gradient(circle, rgb(255, 116, 0, 0.7), rgb(255, 116, 0, 0.2)",
+    textColor: "rgb(255, 116, 0)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 md:w-1/6",
+    about:
+      "Mám praxi v projektovém řízení a vedení týmů. Začal jsem profesní dráhu v oboru IT, programování je mým dlouholetým koníčkem. Nyní bych rád oba obory propojil v ",
+    techStack: {
+      backend: ["Python, PostgreSQL, Django, REST API"],
+      frontend: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Axios",
+        "HTML",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "Material UI",
+      ],
+      tools: ["Git & GitHub, Docker, Slack, Jira"],
+    },
+    projectTech: {
+      jp: [
+        "Python, PostgreSQL, Django, Axios, React, JavaScript, REST API, Material UI, Redux",
+      ],
+      suma: [
+        "JavaScript, TypeScript, HTML, Tailwind CSS, Next.js, React, Google API",
+      ],
+      div: ["Python, PostgreSQL, Django"],
+    },
+  },
+  osforo: {
+    name: "osforo",
+    profession: "Junior Full-Stack Developer",
+    logo: "osforo.png",
+    companyLink: "https://osforo.com/",
+    bgColor:
+      "radial-gradient(circle, rgb(0, 117, 190, 0.7), rgb(0, 117, 190, 0.2)",
+    textColor: "rgb(0, 117, 190)",
+    imgClass: "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto w-1/3 md:w-1/6",
+    about:
+      "Od roku 2021 se nadšeně věnuji programování. Začal jsem profesní dráhu v oboru, také vytvářím vlastní projekty (Python, JavaScript). Nyní hledám pracovní příležitost v ",
+    techStack: {
+      backend: ["Python, REST API, Django, PostgreSQL"],
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      tools: ["Git & GitHub, CI/CD"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, REST API, PostgreSQL, JavaScript, React, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, Next.js, React, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
     },
   },
 };
