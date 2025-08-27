@@ -575,4 +575,41 @@ export const companyData: { [key: string]: CompanyData } = {
       div: ["Python, Django, PostgreSQL"],
     },
   },
+  xorux: {
+    name: "xorux",
+    profession: "Junior Full-Stack Developer",
+    logo: "xorux.png",
+    companyLink: "https://xorux.com/",
+    bgColor:
+      "radial-gradient(circle, rgb(67, 128, 139, 0.7), rgb(67, 128, 139, 0.2)",
+    textColor: "rgb(67, 128, 139)",
+    imgClass:
+      "mx-auto lg:mx-0 lg:-mt-6 lg:ml-auto  w-2/3 sm:w-1/2 md:w-1/3 lg:w-80",
+    about:
+      "Od roku 2021 se se zapálením věnuji programování. Začal jsem profesní dráhu v oboru, také vytvářím vlastní projekty (TypeScript, Python). Nyní hledám pracovní příležitost v ",
+    techStack: {
+      frontend: [
+        "TypeScript",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "HTML",
+        "Redux",
+        "Material UI",
+        "Axios",
+      ],
+      backend: ["Python, REST API, Django, PostgreSQL"],
+      tools: ["Git & GitHub, CI/CD"],
+    },
+    projectTech: {
+      jp: [
+        "Python, Django, REST API, PostgreSQL, React, JavaScript, Material UI, Redux, Axios",
+      ],
+      suma: [
+        "TypeScript, JavaScript, React, Next.js, Tailwind CSS, HTML, Google API",
+      ],
+      div: ["Python, Django, PostgreSQL"],
+    },
+  },
 };
