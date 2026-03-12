@@ -4,7 +4,6 @@ import {
   //Inter,
   Courier_Prime,
 } from "next/font/google";
-import Navbar from "@/app/components/Navbar";
 
 const courier = Courier_Prime({
   subsets: ["latin"],
@@ -40,13 +39,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="cs-cz" className={courier.className}>
+    <html lang="cs-cz" className={courier.className} suppressHydrationWarning>
       <head>
         <title>Jiří Vecko</title>
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <Background>
-          <Navbar />
           {children}
         </Background>
       </body>
