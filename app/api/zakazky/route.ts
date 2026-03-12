@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getNenZakazky } from '@/lib/fetcher';
+import { getAllZakazky } from '@/lib/fetcher';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -7,7 +7,7 @@ export async function GET(request: Request) {
   const q = searchParams.get('q');
 
   try {
-    const data = await getNenZakazky();
+    const data = await getAllZakazky();
     
     let filtered = data;
 

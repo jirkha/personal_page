@@ -1,6 +1,21 @@
 import { parseString } from 'xml2js';
 import { promisify } from 'util';
 import { classify } from './classifier';
+import { getEzakZakazky } from './ezak_fetcher';
+
+export interface Zakazka {
+  id: string;
+  zdroj: string;
+  nazev: string;
+  popis: string | null;
+  url: string;
+  datum_publikace: string;
+  datum_aktualizace: string;
+  disciplina: string | null;
+  klicova_slova: string[];
+}
+
+
 
 const parseXml = promisify(parseString);
 
@@ -14,7 +29,7 @@ function formatDate(d: Date): string {
   return `${day}${month}${year}`;
 }
 
-export async function getNenZakazky() {
+export async function getNenZakazky(): Promise<Zakazka[]> {
   const dateTo = new Date();
   
   // Max 6 měsíců staré
@@ -30,7 +45,6 @@ export async function getNenZakazky() {
   const url = `https://nen.nipez.cz/profil/${NEN_PROFILE}/XMLdataVZ?od=${formatDate(dateFrom)}&do=${formatDate(dateTo)}`;
 
   try {
-    // Na Vercelu využijeme Next.js cache v 1h intervalech (3600s) a bypassneme SQLite
     const res = await fetch(url, { 
       next: { revalidate: 3600, tags: ['nen-data'] }
     });
@@ -38,7 +52,6 @@ export async function getNenZakazky() {
     if (!res.ok) throw new Error('Nelze stáhnout XML z NEN');
     let xmlText = await res.text();
 
-    // Odstranění BOM a prázdných znaků
     xmlText = xmlText.replace(/^\uFEFF/, '').trimStart();
 
     if (!xmlText.startsWith('<?xml') && !xmlText.startsWith('<profil')) {
@@ -48,10 +61,9 @@ export async function getNenZakazky() {
     const result = await parseXml(xmlText) as any;
     const zakazky = result?.profil?.zakazka || [];
 
-    const processedZakazky = [];
+    const processedZakazky: Zakazka[] = [];
 
     for (const z of zakazky) {
-      const idNipez = z.id_nipez?.[0] || '';
       const idObjektu = z.id_objektu?.[0] || '';
       const nazev = z.nazev_vz?.[0] || '';
       const popis = z.predmet_vz?.[0] || '';
@@ -62,7 +74,6 @@ export async function getNenZakazky() {
       const datumStr = cast?.zadavaci_postup_casti?.[0]?.datum_uverejneni?.[0] || new Date().toISOString();
       const pubDate = new Date(datumStr);
       
-      // Hledání data poslední aktualizace z dokumentů a dalších uzlů
       let lastUpdated = pubDate;
       const docList = cast?.zadavaci_postup_casti?.[0]?.dokumenty?.[0]?.dokument || [];
       for (const doc of docList) {
@@ -74,16 +85,13 @@ export async function getNenZakazky() {
         }
       }
 
-      // Striktní kontrola na datum aktualizace
       if (lastUpdated < dateFrom) continue;
       
       const { disciplina, klicova_slova } = classify(nazev + ' ' + popis);
-      
-      // Zobrazovat pouze ty zakázky, které se zařadí do 1+ definovaných oblastí
       if (!disciplina) continue;
 
       processedZakazky.push({
-        id: linkId || Math.random().toString(),
+        id: `nen-${linkId || Math.random().toString()}`,
         zdroj: `NEN – ${NEN_PROFILE}`,
         nazev,
         popis: popis.substring(0, 500),
@@ -95,12 +103,29 @@ export async function getNenZakazky() {
       });
     }
 
-    // Seřadit od nejnověji aktualizovaných
-    processedZakazky.sort((a, b) => new Date(b.datum_aktualizace).getTime() - new Date(a.datum_aktualizace).getTime());
-
     return processedZakazky;
   } catch (error: any) {
     console.error('getNenZakazky error:', error);
-    throw new Error(error.message);
+    return [];
   }
+}
+
+/** Sloučí zakázky ze všech zdrojů, odstraní duplicity dle URL a seřadí. */
+export async function getAllZakazky(): Promise<Zakazka[]> {
+  const [nen, ezak] = await Promise.all([getNenZakazky(), getEzakZakazky()]);
+
+  const all = [...nen, ...ezak];
+
+  // Deduplicate by URL
+  const seen = new Set<string>();
+  const unique = all.filter(z => {
+    if (seen.has(z.url)) return false;
+    seen.add(z.url);
+    return true;
+  });
+
+  // Seřadit od nejnověji aktualizovaných
+  unique.sort((a, b) => new Date(b.datum_aktualizace).getTime() - new Date(a.datum_aktualizace).getTime());
+
+  return unique;
 }
