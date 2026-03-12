@@ -20,7 +20,7 @@ export interface Zakazka {
 const parseXml = promisify(parseString);
 
 // NEN profily zadavatelů – veřejně dostupný XML export
-const NEN_PROFILES = ['ObecVranovice', 'MDCR'];
+const NEN_PROFILES = ['MDCR'];
 
 function formatDate(d: Date): string {
   const day = String(d.getDate()).padStart(2, '0');
