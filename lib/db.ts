@@ -19,7 +19,10 @@ let db: Database | null = null;
 export async function getDb(): Promise<Database> {
   if (db) return db;
   
-  const dbPath = path.resolve(process.cwd(), 'demo.sqlite');
+  // Na Vercelu je systém souborů read-only s výjimkou /tmp
+  const dbPath = process.env.VERCEL 
+    ? path.join('/tmp', 'demo.sqlite') 
+    : path.resolve(process.cwd(), 'demo.sqlite');
   
   db = await open({
     filename: dbPath,
