@@ -19,8 +19,8 @@ export interface Zakazka {
 
 const parseXml = promisify(parseString);
 
-// NEN profil zadavatele – veřejně dostupný XML export
-const NEN_PROFILE = 'ObecVranovice';
+// NEN profily zadavatelů – veřejně dostupný XML export
+const NEN_PROFILES = ['ObecVranovice', 'MDCR'];
 
 function formatDate(d: Date): string {
   const day = String(d.getDate()).padStart(2, '0');
@@ -29,33 +29,21 @@ function formatDate(d: Date): string {
   return `${day}${month}${year}`;
 }
 
-export async function getNenZakazky(): Promise<Zakazka[]> {
-  const dateTo = new Date();
-  
-  // Max 6 měsíců staré
-  const dateFrom = new Date();
-  dateFrom.setMonth(dateFrom.getMonth() - 6);
-
-  // NEN vrací XML pouze pro rozsahy po 1.7.2024
-  const minDate = new Date('2024-07-01');
-  if (dateFrom < minDate) {
-    dateFrom.setTime(minDate.getTime());
-  }
-
-  const url = `https://nen.nipez.cz/profil/${NEN_PROFILE}/XMLdataVZ?od=${formatDate(dateFrom)}&do=${formatDate(dateTo)}`;
+async function fetchNenProfile(profileName: string, dateFrom: Date, dateTo: Date): Promise<Zakazka[]> {
+  const url = `https://nen.nipez.cz/profil/${profileName}/XMLdataVZ?od=${formatDate(dateFrom)}&do=${formatDate(dateTo)}`;
 
   try {
     const res = await fetch(url, { 
       next: { revalidate: 3600, tags: ['nen-data'] }
     });
     
-    if (!res.ok) throw new Error('Nelze stáhnout XML z NEN');
+    if (!res.ok) throw new Error(`Nelze stáhnout XML z NEN pro ${profileName}`);
     let xmlText = await res.text();
 
     xmlText = xmlText.replace(/^\uFEFF/, '').trimStart();
 
     if (!xmlText.startsWith('<?xml') && !xmlText.startsWith('<profil')) {
-      throw new Error('NEN nevrátil validní XML. Odpověď: ' + xmlText.substring(0, 100));
+      throw new Error(`NEN nevrátil validní XML pro ${profileName}`);
     }
 
     const result = await parseXml(xmlText) as any;
@@ -92,7 +80,7 @@ export async function getNenZakazky(): Promise<Zakazka[]> {
 
       processedZakazky.push({
         id: `nen-${linkId || Math.random().toString()}`,
-        zdroj: `NEN – ${NEN_PROFILE}`,
+        zdroj: `NEN – ${profileName}`,
         nazev,
         popis: popis.substring(0, 500),
         url: link,
@@ -105,9 +93,29 @@ export async function getNenZakazky(): Promise<Zakazka[]> {
 
     return processedZakazky;
   } catch (error: any) {
-    console.error('getNenZakazky error:', error);
+    console.error(`getNenZakazky error pro ${profileName}:`, error);
     return [];
   }
+}
+
+export async function getNenZakazky(): Promise<Zakazka[]> {
+  const dateTo = new Date();
+  
+  // Max 6 měsíců staré
+  const dateFrom = new Date();
+  dateFrom.setMonth(dateFrom.getMonth() - 6);
+
+  // NEN vrací XML pouze pro rozsahy po 1.7.2024
+  const minDate = new Date('2024-07-01');
+  if (dateFrom < minDate) {
+    dateFrom.setTime(minDate.getTime());
+  }
+
+  const results = await Promise.all(
+    NEN_PROFILES.map(p => fetchNenProfile(p, dateFrom, dateTo))
+  );
+
+  return results.flat();
 }
 
 /** Sloučí zakázky ze všech zdrojů, odstraní duplicity dle URL a seřadí. */

@@ -1,14 +1,15 @@
 import { classify } from './classifier';
 import type { Zakazka } from './fetcher';
 
-const EZAK_URL = 'https://ezak.brno.cz/contract_index.html';
+const EZAK_PROFILES = [
+  { name: 'E-ZAK Brno', url: 'https://ezak.brno.cz/contract_index.html', baseUrl: 'https://ezak.brno.cz' },
+  { name: 'E-ZAK Kr. Vysočina', url: 'https://ezak.kr-vysocina.cz/contract_index.html', baseUrl: 'https://ezak.kr-vysocina.cz' },
+  { name: 'E-ZAK Správa Železnic', url: 'https://zakazky.spravazeleznic.cz/contract_index.html', baseUrl: 'https://zakazky.spravazeleznic.cz' }
+];
 
-export async function getEzakZakazky(): Promise<Zakazka[]> {
-  const dateFrom = new Date();
-  dateFrom.setMonth(dateFrom.getMonth() - 6);
-
+async function fetchEzakProfile(profileName: string, profileUrl: string, baseUrl: string, dateFrom: Date): Promise<Zakazka[]> {
   try {
-    const res = await fetch(EZAK_URL, {
+    const res = await fetch(profileUrl, {
       next: { revalidate: 3600, tags: ['nen-data'] },
     });
 
@@ -31,8 +32,6 @@ export async function getEzakZakazky(): Promise<Zakazka[]> {
       const detailPath = linkMatch[1];
       const title = linkMatch[2].trim();
       
-      const parts = rowHtml.split(/<td[^>]*>/);
-      // Col 0: link (we already parsed title)
       // Simple extraction of the date (usually in last columns)
       const datesRegex = /([0-9]{2}\.[0-9]{2}\.[0-9]{4})/g;
       const dates = [];
@@ -58,14 +57,14 @@ export async function getEzakZakazky(): Promise<Zakazka[]> {
       const { disciplina, klicova_slova } = classify(title);
       if (!disciplina) continue;
 
-      const id = `ezak-${detailPath.replace('.html', '')}`;
+      const id = `ezak-${baseUrl.replace(/[^a-zA-Z0-9]/g, '')}-${detailPath.replace('.html', '')}`;
 
       items.push({
         id,
-        zdroj: 'Profil - E-ZAK Brno',
+        zdroj: `Profil - ${profileName}`,
         nazev: title,
-        popis: `Zakázka z E-ZAK profilu statutárního města Brna.`,
-        url: `https://ezak.brno.cz/${detailPath}`,
+        popis: `Zakázka z profilu zadavatele (${profileName}).`,
+        url: `${baseUrl}/${detailPath}`,
         datum_publikace: pubDate.toISOString(),
         datum_aktualizace: pubDate.toISOString(),
         disciplina,
@@ -75,7 +74,19 @@ export async function getEzakZakazky(): Promise<Zakazka[]> {
 
     return items;
   } catch (error: any) {
-    console.error('getEzakZakazky error:', error);
+    console.error(`fetchEzakProfile error for ${profileName}:`, error);
     return []; // Soft fail
   }
+}
+
+export async function getEzakZakazky(): Promise<Zakazka[]> {
+  const dateFrom = new Date();
+  dateFrom.setMonth(dateFrom.getMonth() - 6);
+
+  // Získáme data ze všech E-ZAK profilů najednou
+  const results = await Promise.all(
+    EZAK_PROFILES.map(p => fetchEzakProfile(p.name, p.url, p.baseUrl, dateFrom))
+  );
+
+  return results.flat();
 }

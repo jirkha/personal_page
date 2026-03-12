@@ -19,7 +19,7 @@ export default function DemoMonitorClient({ initialZakazky }: Props) {
       const res = await fetch('/api/refresh', { method: 'POST' });
       const data = await res.json();
       if (data.status === 'success') {
-        alert(`Obnoveno: ${data.totalItems || 0} zakázek (NEN + VVZ)`);
+        alert(`Obnoveno: ${data.totalItems || 0} zakázek (NEN + E-ZAK)`);
         // Reload dat po refreshi
         const res2 = await fetch('/api/zakazky');
         const newData = await res2.json();
@@ -57,7 +57,7 @@ export default function DemoMonitorClient({ initialZakazky }: Props) {
         </button>
       </div>
       <p className="text-slate-600 mb-6">
-        Zobrazují se zakázky z <strong>NEN (profil Vranovice)</strong> a <strong>VVZ (ISVZ)</strong>,{' '}
+        Zobrazují se zakázky z <strong>NEN (Obec Vranovice, Min. dopravy)</strong> a <strong>E-ZAK (Brno, Kr. Vysočina, Správa železnic)</strong>,{' '}
         <strong>publikované nebo aktualizované za posledních 6 měsíců</strong>, které spadají do dopravní problematiky.
       </p>
 
