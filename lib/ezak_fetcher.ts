@@ -4,7 +4,8 @@ import type { Zakazka } from './fetcher';
 const EZAK_PROFILES = [
   { name: 'E-ZAK Brno', url: 'https://ezak.brno.cz/contract_index.html', baseUrl: 'https://ezak.brno.cz' },
   { name: 'E-ZAK Kr. Vysočina', url: 'https://ezak.kr-vysocina.cz/contract_index.html', baseUrl: 'https://ezak.kr-vysocina.cz' },
-  { name: 'E-ZAK Správa Železnic', url: 'https://zakazky.spravazeleznic.cz/contract_index.html', baseUrl: 'https://zakazky.spravazeleznic.cz' }
+  { name: 'E-ZAK Správa železnic', url: 'https://zakazky.spravazeleznic.cz/contract_index.html', baseUrl: 'https://zakazky.spravazeleznic.cz' },
+  { name: 'E-ZAK Jihomoravský kr.', url: 'https://zakazky.krajbezkorupce.cz/contract_index.html', baseUrl: 'https://zakazky.krajbezkorupce.cz' }
 ];
 
 async function fetchEzakProfile(profileName: string, profileUrl: string, baseUrl: string, dateFrom: Date): Promise<Zakazka[]> {

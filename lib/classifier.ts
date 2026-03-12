@@ -10,7 +10,7 @@ const discipliny: Disciplina[] = [
   { name: 'Cyklo a pěší doprava', keywords: ['cyklo', 'cyklostezka', 'pěší', 'prostupnost'] },
   { name: 'Udržitelná mobilita', keywords: ['pum', 'sump', 'mobilita'] },
   { name: 'ITS a telematika', keywords: ['its', 'ssz', 'telematika'] },
-  { name: 'Parkování', keywords: ['p+r', 'parkování', 'parkovací'] },
+  { name: 'Parkování', keywords: ['p+r'] },
   { name: 'Bezpečnost', keywords: ['audit', 'bezpečnost', 'nehodovost'] }
 ];
 

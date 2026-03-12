@@ -57,7 +57,7 @@ export default function DemoMonitorClient({ initialZakazky }: Props) {
         </button>
       </div>
       <p className="text-slate-600 mb-6">
-        Zobrazují se zakázky z <strong>NEN (Obec Vranovice, Min. dopravy)</strong> a <strong>E-ZAK (Brno, Kr. Vysočina, Správa železnic)</strong>,{' '}
+        Zobrazují se zakázky z <strong>NEN (Obec Vranovice, Min. dopravy)</strong> a <strong>E-ZAK (Brno, Kr. Vysočina, Správa železnic, JMK)</strong>,{' '}
         <strong>publikované nebo aktualizované za posledních 6 měsíců</strong>, které spadají do dopravní problematiky.
       </p>
 
