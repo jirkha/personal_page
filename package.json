@@ -28,8 +28,6 @@
     "react-pdf": "^10.0.1",
     "react-scroll": "^1.9.3",
     "rss-parser": "^3.13.0",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7",
     "typescript": "^5.8.3",
     "xml2js": "^0.6.2"
   },

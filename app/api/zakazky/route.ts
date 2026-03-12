@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { getDb } from '@/lib/db';
+import { getNenZakazky } from '@/lib/fetcher';
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -7,31 +7,23 @@ export async function GET(request: Request) {
   const q = searchParams.get('q');
 
   try {
-    const db = await getDb();
+    const data = await getNenZakazky();
     
-    let query = "SELECT * FROM zakazky WHERE 1=1";
-    const params: any[] = [];
+    let filtered = data;
 
     if (disciplina) {
-      query += " AND disciplina = ?";
-      params.push(disciplina);
+      filtered = filtered.filter((row: any) => row.disciplina === disciplina);
     }
 
     if (q) {
-      query += " AND (nazev LIKE ? OR popis LIKE ?)";
-      params.push(`%${q}%`, `%${q}%`);
+      const lowerQ = q.toLowerCase();
+      filtered = filtered.filter((row: any) => 
+        row.nazev.toLowerCase().includes(lowerQ) || 
+        (row.popis && row.popis.toLowerCase().includes(lowerQ))
+      );
     }
-    
-    query += " ORDER BY datum_aktualizace DESC";
 
-    const rows = await db.all(query, params);
-    
-    const zakazky = rows.map(row => ({
-      ...row,
-      klicova_slova: JSON.parse(row.klicova_slova || '[]')
-    }));
-
-    return NextResponse.json(zakazky);
+    return NextResponse.json(filtered);
   } catch (error: any) {
     console.error("GET /api/zakazky error:", error);
     return NextResponse.json({ error: error.message }, { status: 500 });

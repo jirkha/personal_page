@@ -1,9 +1,6 @@
 import { parseString } from 'xml2js';
 import { promisify } from 'util';
-import https from 'https';
-import { getDb } from './db';
 import { classify } from './classifier';
-import { randomUUID } from 'crypto';
 
 const parseXml = promisify(parseString);
 
@@ -17,23 +14,7 @@ function formatDate(d: Date): string {
   return `${day}${month}${year}`;
 }
 
-function httpsGet(url: string): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const options = {
-      headers: {
-        'User-Agent': 'curl/8.0',
-        'Accept': '*/*',
-      }
-    };
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
-}
-
-export async function fetchVZFeed() {
+export async function getNenZakazky() {
   const dateTo = new Date();
   
   // Max 6 měsíců staré
@@ -49,7 +30,13 @@ export async function fetchVZFeed() {
   const url = `https://nen.nipez.cz/profil/${NEN_PROFILE}/XMLdataVZ?od=${formatDate(dateFrom)}&do=${formatDate(dateTo)}`;
 
   try {
-    let xmlText = await httpsGet(url);
+    // Na Vercelu využijeme Next.js cache v 1h intervalech (3600s) a bypassneme SQLite
+    const res = await fetch(url, { 
+      next: { revalidate: 3600, tags: ['nen-data'] }
+    });
+    
+    if (!res.ok) throw new Error('Nelze stáhnout XML z NEN');
+    let xmlText = await res.text();
 
     // Odstranění BOM a prázdných znaků
     xmlText = xmlText.replace(/^\uFEFF/, '').trimStart();
@@ -59,11 +46,9 @@ export async function fetchVZFeed() {
     }
 
     const result = await parseXml(xmlText) as any;
-
-    const db = await getDb();
-    let appendedCount = 0;
-
     const zakazky = result?.profil?.zakazka || [];
+
+    const processedZakazky = [];
 
     for (const z of zakazky) {
       const idNipez = z.id_nipez?.[0] || '';
@@ -91,39 +76,31 @@ export async function fetchVZFeed() {
 
       // Striktní kontrola na datum aktualizace
       if (lastUpdated < dateFrom) continue;
-
-
-      const exist = await db.get("SELECT id FROM zakazky WHERE url = ?", [link]);
-      if (exist) continue;
-
+      
       const { disciplina, klicova_slova } = classify(nazev + ' ' + popis);
       
       // Zobrazovat pouze ty zakázky, které se zařadí do 1+ definovaných oblastí
       if (!disciplina) continue;
 
-      const id = randomUUID();
-
-      await db.run(
-        `INSERT INTO zakazky (id, zdroj, nazev, popis, url, datum_publikace, datum_aktualizace, disciplina, klicova_slova)
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [
-          id,
-          `NEN – ${NEN_PROFILE}`,
-          nazev,
-          popis.substring(0, 500),
-          link,
-          datumStr,
-          lastUpdated.toISOString(),
-          disciplina,
-          JSON.stringify(klicova_slova)
-        ]
-      );
-      appendedCount++;
+      processedZakazky.push({
+        id: linkId || Math.random().toString(),
+        zdroj: `NEN – ${NEN_PROFILE}`,
+        nazev,
+        popis: popis.substring(0, 500),
+        url: link,
+        datum_publikace: datumStr,
+        datum_aktualizace: lastUpdated.toISOString(),
+        disciplina,
+        klicova_slova
+      });
     }
 
-    return { status: 'success', appendedCount, totalItems: zakazky.length, source: url };
+    // Seřadit od nejnověji aktualizovaných
+    processedZakazky.sort((a, b) => new Date(b.datum_aktualizace).getTime() - new Date(a.datum_aktualizace).getTime());
+
+    return processedZakazky;
   } catch (error: any) {
-    console.error('FetchVZFeed error:', error);
+    console.error('getNenZakazky error:', error);
     throw new Error(error.message);
   }
 }
