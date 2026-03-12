@@ -16,12 +16,15 @@ export interface ZakazkaRow {
 
 let db: Database | null = null;
 
+import { tmpdir } from 'os';
+
 export async function getDb(): Promise<Database> {
   if (db) return db;
   
   // Na Vercelu je systém souborů read-only s výjimkou /tmp
-  const dbPath = process.env.VERCEL 
-    ? path.join('/tmp', 'demo.sqlite') 
+  const isVercel = process.env.VERCEL === '1' || process.env.VERCEL_ENV;
+  const dbPath = isVercel
+    ? path.join(tmpdir(), 'demo.sqlite') 
     : path.resolve(process.cwd(), 'demo.sqlite');
   
   db = await open({
